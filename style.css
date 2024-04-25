@@ -15,4 +15,10 @@ h3 {
   background-color: blue; }
 
 h4 {
-  display: inline-block; }
+  display: inline-block;
+  border-bottom: 1px solid black;
+  padding-bottom: 25px;
+  width: 90%; }
+
+.linkuri-acces a {
+  display: block; }

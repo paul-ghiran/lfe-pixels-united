@@ -1,23 +1,30 @@
 .banner {
-    position: relative;
+  position: relative;
 }
 
 h2 {
-    color: white;
-    text-align: center;
-    top: 50%;
-    width: 100%;
-    position: absolute;
+  color: white;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  position: absolute;
 }
 
 h3 {
-    color: white;
+  color: white;
 }
 
 .banner-2 {
-    background-color: blue;
+  background-color: blue;
 }
 
-h4{
-    display: inline-block;
+h4 {
+  display: inline-block;
+  border-bottom: 1px solid black;
+  padding-bottom: 25px;
+  width: 90%;
+}
+
+.linkuri-acces a {
+  display: block;
 }
