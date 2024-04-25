@@ -1,10 +1,15 @@
+.banner {
+  position: relative; }
+
 h2 {
-  margin-top: -300px;
   color: white;
-  text-align: center; }
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  position: absolute; }
 
 h3 {
-  margin-top: 300px; }
+  color: white; }
 
 .banner-2 {
   background-color: blue; }

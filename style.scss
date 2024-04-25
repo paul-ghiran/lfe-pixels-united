@@ -1,13 +1,19 @@
-h2{
-    margin-top: -300px;
+.banner {
+    position: relative;
+}
+
+h2 {
     color: white;
-text-align: center;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    position: absolute;
 }
 
-h3{
-    margin-top: 300px;
+h3 {
+    color: white;
 }
 
-.banner-2{
+.banner-2 {
     background-color: blue;
 }
