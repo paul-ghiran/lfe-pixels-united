@@ -41,3 +41,9 @@ h4 {
       transform: scale(1.2); }
   .stiri-art .wrapper {
     overflow: hidden; }
+
+.pozemagic img {
+  width: 50%; }
+
+.pozemagic #img2 {
+  margin-left: -10px; }
