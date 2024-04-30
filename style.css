@@ -42,8 +42,24 @@ h4 {
   .stiri-art .wrapper {
     overflow: hidden; }
 
-.pozemagic img {
-  width: 50%; }
+.pozemagic {
+  margin-bottom: 5%; }
+  .pozemagic img {
+    width: 50%; }
+  .pozemagic #img2 {
+    margin-left: -10px; }
 
-.pozemagic #img2 {
-  margin-left: -10px; }
+section {
+  display: flex;
+  height: 450px;
+  margin-bottom: 10%; }
+  section .stanga {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://www.brasovcity.ro/img/continut/box-video/video-bg1.jpg); }
+  section .dreapta {
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://www.brasovcity.ro/img/continut/box-video/video-bg2.jpg);
+    width: 50%; }

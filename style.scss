@@ -45,19 +45,40 @@ h4 {
   &:hover {
     img {
       transform: scale(1.2);
-      
     }
     box-shadow: 0 0 5px gray;
   }
-  .wrapper{
+  .wrapper {
     overflow: hidden;
   }
 }
 .pozemagic {
+  margin-bottom: 5%;
   img {
     width: 50%;
   }
   #img2 {
     margin-left: -10px;
+  }
+}
+
+section {
+  display: flex;
+  height: 450px;
+  margin-bottom: 10%;
+  .stanga {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    // background-color: blue;
+    background-image: url(https://www.brasovcity.ro/img/continut/box-video/video-bg1.jpg);
+  }
+
+  .dreapta {
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://www.brasovcity.ro/img/continut/box-video/video-bg2.jpg);
+    width: 50%;
+    // background-color: red;
   }
 }
