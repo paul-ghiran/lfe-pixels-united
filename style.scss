@@ -15,7 +15,8 @@ h3 {
 }
 
 .banner-2 {
-  background-color: blue;
+  background-color: #1d73e0;
+  padding: 30px 0;
 }
 
 h4 {
@@ -28,6 +29,7 @@ h4 {
 .linkuri-acces a {
   display: block;
 }
+
 .buton-stiri {
   position: absolute;
   background-color: gray;
@@ -38,25 +40,32 @@ h4 {
 .stiri-art {
   position: relative;
   width: 400px;
+
   img {
     width: 100%;
     transition: 0.4s ease transform;
   }
+
   &:hover {
     img {
       transform: scale(1.2);
     }
+
     box-shadow: 0 0 5px gray;
   }
+
   .wrapper {
     overflow: hidden;
   }
 }
+
 .pozemagic {
   margin-bottom: 5%;
+
   img {
     width: 50%;
   }
+
   #img2 {
     margin-left: -10px;
   }
@@ -66,6 +75,7 @@ section {
   display: flex;
   height: 450px;
   margin-bottom: 10%;
+
   .stanga {
     width: 50%;
     background-size: cover;
@@ -80,5 +90,14 @@ section {
     background-image: url(https://www.brasovcity.ro/img/continut/box-video/video-bg2.jpg);
     width: 50%;
     // background-color: red;
+  }
+}
+
+.sectiune-acces-rapid {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  h1 {
+    margin-bottom: 50px;
   }
 }
