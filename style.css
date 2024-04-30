@@ -22,3 +22,15 @@ h4 {
 
 .linkuri-acces a {
   display: block; }
+
+.buton-stiri {
+  position: absolute;
+  background-color: gray;
+  top: 20px;
+  right: 10px; }
+
+.stiri-art {
+  position: relative;
+  width: 400px; }
+  .stiri-art img {
+    width: 100%; }
