@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 60px;
+
+    nav{
+        height: 50px;
+    }
+
+    nav ul li{
+        font-size: 12px;
+        font-weight: bold;
+        display: inline-block;
+        padding: 10px;
+        color: #dc0028;
+    }
+
+    .separator{
+        padding-right: 10px;
+        display: inline-block;
+        border-left: 2px solid #ededed;
+    }
+
+    .fa.fa-user-o{
+        padding: 10px;
+    }
+
+}
+
+.header-border{
+    border-bottom: 2px solid #ededed;
+}
