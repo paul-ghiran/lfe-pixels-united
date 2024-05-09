@@ -41,3 +41,10 @@
     gap: 10px; }
   .links-wrapper .fa-search {
     color: red; }
+  .links-wrapper .sub-meniu {
+    display: none;
+    position: absolute; }
+  .links-wrapper .link-item:hover {
+    color: grey; }
+    .links-wrapper .link-item:hover .sub-meniu {
+      display: block; }
