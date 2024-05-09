@@ -41,10 +41,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   // gap: 150px;
   img {
     height: 48px;
   }
+
   .links a {
     color: black;
     text-decoration: none;
@@ -53,7 +55,12 @@
 
   .links {
     display: flex;
-    gap: 10px;
+    gap: 20px;
+
+    &>* {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 
   .fa-search {
@@ -63,12 +70,31 @@
   .sub-meniu {
     display: none;
     position: absolute;
+    background-color: white;
+    box-shadow: 0 20px 15px rgba(0, 0, 0, 0.16);
+    left: 0;
+    right: 0;
+    top: 70px;
+    padding: 40px 200px;
+
+    a {
+      display: block;
+    }
   }
 
   .link-item:hover {
     color: grey;
+
     .sub-meniu {
       display: block;
     }
   }
+}
+
+.eagle {
+  width: 100%;
+}
+
+.relative-wrapper {
+  position: relative;
 }

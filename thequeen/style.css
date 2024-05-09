@@ -38,13 +38,30 @@
     font-size: 15px; }
   .links-wrapper .links {
     display: flex;
-    gap: 10px; }
+    gap: 20px; }
+    .links-wrapper .links > * {
+      padding-top: 10px;
+      padding-bottom: 10px; }
   .links-wrapper .fa-search {
     color: red; }
   .links-wrapper .sub-meniu {
     display: none;
-    position: absolute; }
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 20px 15px rgba(0, 0, 0, 0.16);
+    left: 0;
+    right: 0;
+    top: 70px;
+    padding: 40px 200px; }
+    .links-wrapper .sub-meniu a {
+      display: block; }
   .links-wrapper .link-item:hover {
     color: grey; }
     .links-wrapper .link-item:hover .sub-meniu {
       display: block; }
+
+.eagle {
+  width: 100%; }
+
+.relative-wrapper {
+  position: relative; }
