@@ -98,3 +98,12 @@
     .boxes .row .col .wrapper .actions {
       text-align: center;
       font-size: 32px; }
+
+.butoane.container {
+  margin-top: 100px; }
+
+.butoane .butoane-btn {
+  align-items: center; }
+
+.butoane .text-right {
+  padding-left: 10px; }

@@ -161,3 +161,15 @@
     }
   }
 }
+
+.butoane {
+  &.container {
+    margin-top: 100px;
+  }
+  .butoane-btn{
+    align-items: center;
+  } 
+  .text-right{
+    padding-left: 10px;
+  }
+}
