@@ -65,3 +65,36 @@
 
 .relative-wrapper {
   position: relative; }
+
+.boxes .row .col {
+  position: relative;
+  overflow: hidden;
+  flex-basis: 360px; }
+  .boxes .row .col:hover .wrapper {
+    bottom: 0; }
+    .boxes .row .col:hover .wrapper .btn {
+      margin-bottom: 20px;
+      margin-left: 30px; }
+  .boxes .row .col img {
+    width: 330px;
+    height: 560px;
+    border-radius: 20px; }
+  .boxes .row .col .wrapper {
+    position: absolute;
+    bottom: -30px;
+    color: #fff;
+    width: 330px;
+    transition: 0.5s ease all; }
+    .boxes .row .col .wrapper .black {
+      color: black; }
+    .boxes .row .col .wrapper .btn {
+      margin-bottom: -10px;
+      margin-left: 30px;
+      transition: 0.5s ease all; }
+    .boxes .row .col .wrapper p {
+      font-size: 28px;
+      padding: 28px 28px 5px 28px;
+      margin: 0; }
+    .boxes .row .col .wrapper .actions {
+      text-align: center;
+      font-size: 32px; }

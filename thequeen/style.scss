@@ -98,3 +98,66 @@
 .relative-wrapper {
   position: relative;
 }
+
+.boxes{
+  .row{
+    
+    .col{
+      position: relative;
+      overflow: hidden;
+      flex-basis: 360px;
+      
+      &:hover{
+        .wrapper{
+          bottom: 0;
+
+          .btn{
+            margin-bottom: 20px;
+            margin-left: 30px;
+            
+          }
+        }
+      }
+      img{
+  
+        width: 330px;
+        height: 560px;
+        border-radius: 20px;
+      }
+
+      .wrapper{
+        position: absolute;
+        bottom: -30px;
+        color: #fff;
+        width: 330px;
+        transition: 0.5s ease all;
+        
+        .black{
+          color: black;
+        }
+
+        .btn{
+          margin-bottom: -10px;
+          margin-left: 30px;
+          transition: 0.5s ease all;
+
+        }
+        
+        p{
+        
+          font-size: 28px;
+          padding: 28px 28px 5px 28px;
+          margin: 0;
+        }
+
+        .actions{
+          text-align: center;
+          font-size: 32px;
+          
+        }
+
+      }
+
+    }
+  }
+}
