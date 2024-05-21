@@ -130,6 +130,9 @@
     width: 390px;
     bottom: -40px; }
 
+.educatie-medicala * {
+  color: #2e333c; }
+
 .educatie-medicala h2 {
   padding-bottom: 40px;
   padding-top: 80px; }
