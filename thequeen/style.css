@@ -52,7 +52,8 @@
     left: 0;
     right: 0;
     top: 70px;
-    padding: 40px 200px; }
+    padding: 40px 200px;
+    z-index: 1; }
     .links-wrapper .sub-meniu a {
       display: block; }
   .links-wrapper .link-item:hover {
