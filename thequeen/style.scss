@@ -100,61 +100,62 @@
   position: relative;
 }
 
-.boxes{
-  .row{
-    
-    .col{
+.boxes {
+  .row {
+
+    .col {
       position: relative;
       overflow: hidden;
       flex-basis: 360px;
-      
-      &:hover{
-        .wrapper{
+
+      &:hover {
+        .wrapper {
           bottom: 0;
 
-          .btn{
+          .btn {
             margin-bottom: 20px;
             margin-left: 30px;
-            
+
           }
         }
       }
-      img{
-  
+
+      img {
+
         width: 330px;
         height: 560px;
         border-radius: 20px;
       }
 
-      .wrapper{
+      .wrapper {
         position: absolute;
         bottom: -30px;
         color: #fff;
         width: 330px;
         transition: 0.5s ease all;
-        
-        .black{
+
+        .black {
           color: black;
         }
 
-        .btn{
+        .btn {
           margin-bottom: -10px;
           margin-left: 30px;
           transition: 0.5s ease all;
 
         }
-        
-        p{
-        
+
+        p {
+
           font-size: 28px;
           padding: 28px 28px 5px 28px;
           margin: 0;
         }
 
-        .actions{
+        .actions {
           text-align: center;
           font-size: 32px;
-          
+
         }
 
       }
@@ -167,112 +168,132 @@
   &.container {
     margin-top: 100px;
   }
-  .butoane-btn{
+
+  .butoane-btn {
     align-items: center;
-  } 
-  .text-right{
+  }
+
+  .text-right {
     padding-left: 10px;
   }
+
   h2 {
     font-size: 25px;
   }
 }
-.link-uri{
+
+.link-uri {
 
   margin-top: 100px;
   margin-bottom: 100px;
   position: relative;
 
-  a{
-    color:red;
+  a {
+    color: red;
     text-decoration: none;
     font-size: 16px;
   }
 
-  a:hover{
+  a:hover {
     color: darkred;
   }
 
-  h2{
+  h2 {
     font-size: 28px;
   }
 
-  img{
+  img {
     position: absolute;
-   right: 290px;
-   width:390px;
-   bottom: -40px;
-   
+    right: 290px;
+    width: 390px;
+    bottom: -40px;
+
   }
- 
+
 }
 
-.educatie-medicala{
+.educatie-medicala {
 
-  background-color: #f7f7f7;
+  .fundal-sectiune {
+    background-color: #f7f7f7;
+    position: absolute;
+    height: 100%;
+    left: -100px;
+    right: -100px;
+  }
 
-  .container{
-    padding-top:100px ;
+  .continut-sectiune {
+    position: relative;
+  }
+
+  .container {
+    padding-top: 100px;
     padding-bottom: 100px;
-    h2{
+    position: relative;
+
+    h2 {
       font-size: 42px;
       text-align: center;
       padding-bottom: 70px;
     }
 
-    .row{
-      
-      .col.analize.big{
-        h4{
+    .row {
+
+      .col.analize.big {
+        h4 {
           padding-bottom: 170px;
         }
       }
-      .analize{
-        
-       
+
+      .analize {
+
+
         display: flex;
         flex-direction: column;
         gap: 24px;
-        .card{
+
+        .card {
           background-color: #fff;
           padding: 40px;
-          
-         
 
 
-          img{
+
+
+          img {
             width: 310px;
             margin-bottom: 20px;
-            
+
           }
-          p{
+
+          p {
             font-size: 12px;
             font-weight: bold;
-            
 
-           
+
+
           }
-          h4{
-            color:#dc0028;
+
+          h4 {
+            color: #dc0028;
             font-size: 28px;
             padding-bottom: 90px;
           }
-  
-          .vizualizari{
+
+          .vizualizari {
             display: flex;
             justify-content: space-between;
-            
-            .eye-wrapper{
+
+            .eye-wrapper {
               display: flex;
               gap: 10px;
-              
-              p{
+
+              p {
                 font-size: 12px;
                 font-weight: bold;
                 padding: 0;
               }
             }
-        }
+          }
         }
       }
     }

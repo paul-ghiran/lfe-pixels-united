@@ -130,41 +130,50 @@
     width: 390px;
     bottom: -40px; }
 
-.educatie-medicala {
-  background-color: #f7f7f7; }
-  .educatie-medicala .container {
-    padding-top: 100px;
-    padding-bottom: 100px; }
-    .educatie-medicala .container h2 {
-      font-size: 42px;
-      text-align: center;
-      padding-bottom: 70px; }
-    .educatie-medicala .container .row .col.analize.big h4 {
-      padding-bottom: 170px; }
-    .educatie-medicala .container .row .analize {
-      display: flex;
-      flex-direction: column;
-      gap: 24px; }
-      .educatie-medicala .container .row .analize .card {
-        background-color: #fff;
-        padding: 40px; }
-        .educatie-medicala .container .row .analize .card img {
-          width: 310px;
-          margin-bottom: 20px; }
-        .educatie-medicala .container .row .analize .card p {
-          font-size: 12px;
-          font-weight: bold; }
-        .educatie-medicala .container .row .analize .card h4 {
-          color: #dc0028;
-          font-size: 28px;
-          padding-bottom: 90px; }
-        .educatie-medicala .container .row .analize .card .vizualizari {
+.educatie-medicala .fundal-sectiune {
+  background-color: #f7f7f7;
+  position: absolute;
+  height: 100%;
+  left: -100px;
+  right: -100px; }
+
+.educatie-medicala .continut-sectiune {
+  position: relative; }
+
+.educatie-medicala .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative; }
+  .educatie-medicala .container h2 {
+    font-size: 42px;
+    text-align: center;
+    padding-bottom: 70px; }
+  .educatie-medicala .container .row .col.analize.big h4 {
+    padding-bottom: 170px; }
+  .educatie-medicala .container .row .analize {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; }
+    .educatie-medicala .container .row .analize .card {
+      background-color: #fff;
+      padding: 40px; }
+      .educatie-medicala .container .row .analize .card img {
+        width: 310px;
+        margin-bottom: 20px; }
+      .educatie-medicala .container .row .analize .card p {
+        font-size: 12px;
+        font-weight: bold; }
+      .educatie-medicala .container .row .analize .card h4 {
+        color: #dc0028;
+        font-size: 28px;
+        padding-bottom: 90px; }
+      .educatie-medicala .container .row .analize .card .vizualizari {
+        display: flex;
+        justify-content: space-between; }
+        .educatie-medicala .container .row .analize .card .vizualizari .eye-wrapper {
           display: flex;
-          justify-content: space-between; }
-          .educatie-medicala .container .row .analize .card .vizualizari .eye-wrapper {
-            display: flex;
-            gap: 10px; }
-            .educatie-medicala .container .row .analize .card .vizualizari .eye-wrapper p {
-              font-size: 12px;
-              font-weight: bold;
-              padding: 0; }
+          gap: 10px; }
+          .educatie-medicala .container .row .analize .card .vizualizari .eye-wrapper p {
+            font-size: 12px;
+            font-weight: bold;
+            padding: 0; }
