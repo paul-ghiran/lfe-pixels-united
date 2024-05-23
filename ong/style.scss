@@ -2,3 +2,156 @@
   padding: 0;
   margin: 0;
 }
+
+$verdePrincipal: #3A8514;
+
+.container {
+  width: 1210px;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.nav-verde {
+  background: $verdePrincipal;
+  color: white;
+  height: 57px;
+
+
+  h4 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 57px;
+    margin: 0;
+  }
+}
+
+.navbar {
+  padding: 14px 0;
+
+  .container {
+    justify-content: space-between;
+    display: flex;
+
+    .logos {
+      display: flex;
+
+      img {
+        height: 70px;
+        padding-bottom: 10px;
+      }
+
+      div {
+        width: 145px;
+        font-size: 14px;
+        padding: 0 16px;
+        color: #000;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      margin: 0;
+
+      li {
+        padding: 16px;
+        font-weight: 600;
+        line-height: 23px;
+
+        a {
+          text-decoration: none;
+          color: $verdePrincipal;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  background-size: cover;
+  background-image: url("./header.png");
+  height: 750px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .wrapper {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 56;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+  }
+
+  .button {
+    width: 160px;
+    height: 59px;
+    border-radius: 4px;
+    padding: 18px 24px;
+    background-color: $verdePrincipal;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.63px;
+    display: inline-block;
+  }
+}
+
+.asociatia {
+  padding: 117px 0;
+  display: flex;
+  flex-direction: column;
+
+  .linie-1 {
+    border: 1px solid $verdePrincipal;
+    width: 851px;
+  }
+
+  h4 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+    color: $verdePrincipal;
+  }
+
+  .manuta {
+    padding-top: 106px;
+    text-align: center;
+  }
+
+  .text {
+    padding-top: 70px;
+    width: 59%;
+
+    h4 {
+      padding-bottom: 36px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 32.4px;
+      margin-bottom: 70px;
+    }
+  }
+
+  .linie-2 {
+    border: 1px solid $verdePrincipal;
+    width: 1053px;
+    align-self: flex-end;
+  }
+}
+
+.row {
+  width: 100%;
+}

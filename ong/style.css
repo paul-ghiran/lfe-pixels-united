@@ -1,3 +1,109 @@
 * {
   padding: 0;
   margin: 0; }
+
+.container {
+  width: 1210px; }
+
+body {
+  font-family: "Source Sans 3", sans-serif; }
+
+.nav-verde {
+  background: #3A8514;
+  color: white;
+  height: 57px; }
+  .nav-verde h4 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 57px;
+    margin: 0; }
+
+.navbar {
+  padding: 14px 0; }
+  .navbar .container {
+    justify-content: space-between;
+    display: flex; }
+    .navbar .container .logos {
+      display: flex; }
+      .navbar .container .logos img {
+        height: 70px;
+        padding-bottom: 10px; }
+      .navbar .container .logos div {
+        width: 145px;
+        font-size: 14px;
+        padding: 0 16px;
+        color: #000;
+        font-weight: 500;
+        text-align: center; }
+    .navbar .container ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      margin: 0; }
+      .navbar .container ul li {
+        padding: 16px;
+        font-weight: 600;
+        line-height: 23px; }
+        .navbar .container ul li a {
+          text-decoration: none;
+          color: #3A8514;
+          font-size: 18px; }
+
+.banner {
+  background-size: cover;
+  background-image: url("./header.png");
+  height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .banner .wrapper {
+    text-align: center; }
+  .banner h2 {
+    font-size: 56;
+    font-weight: 700;
+    color: white;
+    text-align: center; }
+  .banner .button {
+    width: 160px;
+    height: 59px;
+    border-radius: 4px;
+    padding: 18px 24px;
+    background-color: #3A8514;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.63px;
+    display: inline-block; }
+
+.asociatia {
+  padding: 117px 0;
+  display: flex;
+  flex-direction: column; }
+  .asociatia .linie-1 {
+    border: 1px solid #3A8514;
+    width: 851px; }
+  .asociatia h4 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #3A8514; }
+  .asociatia .manuta {
+    padding-top: 106px;
+    text-align: center; }
+  .asociatia .text {
+    padding-top: 70px;
+    width: 59%; }
+    .asociatia .text h4 {
+      padding-bottom: 36px; }
+    .asociatia .text p {
+      font-size: 18px;
+      line-height: 32.4px;
+      margin-bottom: 70px; }
+  .asociatia .linie-2 {
+    border: 1px solid #3A8514;
+    width: 1053px;
+    align-self: flex-end; }
+
+.row {
+  width: 100%; }
