@@ -3,6 +3,276 @@
   margin: 0;
 }
 
+.most-popular {
+  background-color: #1c1c1c;
+  width: 100%;
+  height: 846px;
+
+  .products {
+    h3 {
+      font-family: "Nobile", sans-serif;
+      color: #fefaec;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 54px;
+      padding-top: 96px;
+      margin-bottom: 48px;
+      padding-left: 6px;
+    }
+
+    .cards-wrapper {
+      display: flex;
+      gap: 24px;
+    }
+    .cards {
+      background-color: #ffffff;
+      width: 384px;
+      height: 552px;
+      border-radius: 5px;
+
+      img {
+        width: 384px;
+        height: 352px;
+        border-bottom: 3px solid #db9f55;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      .info-wrapper {
+        padding: 32px;
+        h5 {
+          font-family: "Mulish", sans-serif;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 36px;
+          color: #000;
+          margin-bottom: 8px;
+        }
+        p {
+          font-family: "Mulish", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000;
+          margin: 0;
+        }
+        .price-box {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 32px;
+          height: 36px;
+          p {
+            font-family: "Mulish", sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+          }
+          .img-wrapper {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          img {
+            width: 24px;
+            height: 24px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.value {
+  background: #1c1c1c;
+  width: 100%;
+  height: 414px;
+
+  .container {
+    padding: 95px 0 95px 0;
+    justify-content: space-evenly;
+    margin: 0 360px 0 360px;
+    align-items: center;
+  }
+
+  .card1 {
+    width: 211px;
+    height: 223px;
+
+    img {
+      width: 123px;
+      height: 141px;
+      margin: 0 45px 49px 45px;
+    }
+
+    p {
+      font-family: Mulish;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      color: #fefaec;
+    }
+  }
+}
+
+.card2 {
+  width: 188px;
+  height: 223px;
+  text-align: center;
+
+  img {
+    width: 159px;
+    height: 141px;
+    margin: 0 14px 49px 15px;
+  }
+
+  p {
+    font-family: Mulish, sans serif;
+    font-size: 24px;
+    line-height: 32.4px;
+    color: #fefaec;
+  }
+}
+
+.card3 {
+  width: 214px;
+  height: 223px;
+  text-align: center;
+
+  img {
+    width: 159px;
+    height: 141px;
+    margin: 0 37px 49px 37px;
+  }
+
+  p {
+    font-family: Mulish;
+    font-size: 24px;
+    line-height: 32.4px;
+    color: #fefaec;
+  }
+}
+
+/* Banner */
+
+.banner {
+  background-size: cover;
+  /* background-size: 100% 100%;
+  background-repeat: no-repeat; */
+  background-image: url("./image.png");
+  height: 952px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  text-align: left;
+  margin-left: 360px;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700px;
+  font-style: normal;
+  color: #fefaec;
+  text-align: left;
+  line-height: 64.8px;
+  font-family: "Nobile", sans-serif;
+}
+
+.button-comanda {
+  font-family: "Mulish", sans-serif;
+  margin-top: 48px;
+  width: 165px;
+  height: 56px;
+  border-radius: 4px;
+  padding: 18px 24px;
+  background-color: #db9f55;
+  color: #1c1c1c;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 20.08px;
+  display: inline-block;
+}
+
+.navbar-div {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  align-self: flex-start;
+}
+
+.meniu {
+  align-self: flex-end;
+}
+
+.navbar {
+  font-family: "Mulish", sans-serif;
+  background-color: #1c1c1c;
+  height: 96px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
+
+  .logo {
+    width: 163.56px;
+    height: 64px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fefaec;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+  }
+}
+/*Maria sectiune*/
+.wrapper-2 {
+  background-image: url("./paste-banner-2.png");
+  height: 554px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  span {
+    font-family: "Nobile";
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+    text-align: center;
+    color: #fefaec;
+    padding-top: 144px;
+  }
+  .btn-2 {
+    color: #000000;
+    font-family: "Mulish";
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #db9f55;
+    padding: 18px 24px;
+    border-radius: 4px;
+    margin-top: 48px;
+    margin-bottom: 144px;
+    &:hover {
+      background-color: #d48a3b;
+      color: white;
+    }
+    &:active {
+      background-color: #c67230;
+    }
+  }
+}
+
 .recenziile-clientilor {
   background-color: #1c1c1c;
   height: 672px;
