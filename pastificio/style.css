@@ -52,3 +52,70 @@
     font-size: 24px;
     line-height: 32.4px;
     color: #FEFAEC; }
+
+/* Banner */
+.banner {
+  background-size: cover;
+  /* background-size: 100% 100%;
+  background-repeat: no-repeat; */
+  background-image: url("./image.png");
+  height: 952px;
+  display: flex;
+  align-items: center; }
+
+.wrapper {
+  text-align: left;
+  margin-left: 360px; }
+
+h2 {
+  font-size: 48px;
+  font-weight: 700px;
+  font-style: normal;
+  color: #FEFAEC;
+  text-align: left;
+  line-height: 64.8px;
+  font-family: "Nobile", sans-serif; }
+
+.button-comanda {
+  font-family: "Mulish", sans-serif;
+  margin-top: 48px;
+  width: 165px;
+  height: 56px;
+  border-radius: 4px;
+  padding: 18px 24px;
+  background-color: #DB9F55;
+  color: #1C1C1C;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 20.08px;
+  display: inline-block; }
+
+.navbar-div {
+  display: flex;
+  align-items: center; }
+
+#logo {
+  align-self: flex-start; }
+
+.meniu {
+  align-self: flex-end; }
+
+.navbar {
+  font-family: "Mulish", sans-serif;
+  background-color: #1c1c1c;
+  height: 96px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25); }
+  .navbar .logo {
+    width: 163.56px;
+    height: 64px; }
+  .navbar a {
+    text-decoration: none;
+    color: #FEFAEC;
+    font-weight: 400;
+    font-size: 16px; }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    padding: 0;
+    margin: 0; }
