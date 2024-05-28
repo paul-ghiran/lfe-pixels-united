@@ -590,27 +590,33 @@ img {
       /*4 din cele cinci group cu macaron au 2 poze dintre care una e in
       dreapta si se afla in dreapta jos fata de container*/
       .group1-absolute {
+        width: 68px;
         top: 38%;
       }
       .group2-absolute {
+        width: 68px;
         bottom: 0;
         right: 0;
       }
       .group3-absolute {
+        width: 68px;
         left: 42%;
         bottom: 10%;
         transform: scaleX(-1);
       }
       .group4-absolute {
+        width: 68px;
         right: 17%;
         top: 34%;
         transform: scaleX(-1);
       }
       .group5-absolute {
+        width: 68px;
         right: 35%;
         top: 1%;
       }
       .group6-absolute {
+        width: 64px;
         left: 22%;
       }
       .group7-absolute {
@@ -620,10 +626,12 @@ img {
         left: 10%;
         
         .group7-body-top {
+          width: 22px;
           bottom: 0;
           left: 44%;
         }
         .group7-body-bottom {
+          width: 22px;
           bottom: 0;
           left: 34%;
         }
@@ -634,10 +642,12 @@ img {
         top: 31%;
         left: 27%;
         .group8-body-top {
+          width: 22px;
           bottom: 45%;
           left: 43%;
         }
         .group8-body-bottom {
+          width: 22px;
           bottom: 30%;
           left: 29%;
         }
@@ -648,10 +658,12 @@ img {
         top: 44%;
         right: 36%;
         .group9-body-top {
+          width: 22px;
           bottom: 47%;
           left: 40%;
         }
         .group9-body-bottom {
+          width: 22px;
           bottom: 30%;
           left: 29%;
         }
@@ -662,10 +674,12 @@ img {
         right: 1.4%;
         bottom: 18%;
         .group10-body-top {
+          width: 25px;
           bottom: 50%;
           left: 26%;
         }
         .group10-body-bottom {
+          width: 24px;
           bottom: 29%;
           left: 33%;
         }
@@ -675,6 +689,7 @@ img {
         height: 32px;
         right: 17.5%;
         .group11-body-bottom {
+          width: 24px;
           left: 36%;
         }
       }
@@ -683,18 +698,36 @@ img {
         height: 50px;
         top: 16%;
         left: 8%;
+        .group12-left {
+          width: 29px;
+        }
+        .group12-right {
+          width: 34px;
+        }
       }
       .group13-absolute {
         width: 65px;
         height: 50px;
         bottom: 29%;
         left: 21%;
+        .group13-left {
+          width: 29px;
+        }
+        .group13-right {
+          width: 34px;
+        }
       }
       .group14-absolute {
         width: 65px;
         height: 50px;
         left: 46%;
         top: 19%;
+        .group14-left {
+          width: 29px;
+        }
+        .group14-right {
+          width: 34px;
+        }
       }
       .group15-absolute {
         width: 65px;
@@ -702,9 +735,11 @@ img {
         right: 28%;
         bottom: 25%;
         .group15-left {
+            width: 38px;
             bottom: 0;
         }
         .group15-right {
+          width: 34px;
           right: 0;
         }
       }
@@ -713,6 +748,12 @@ img {
         height: 50px;
         right: 5%;
         top: 23%;
+        .group16-left {
+          width: 29px;
+        }
+        .group16-right {
+          width: 34px;
+        }
       }
     }
   }

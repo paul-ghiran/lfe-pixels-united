@@ -469,22 +469,28 @@ img {
         right: 0;
         bottom: 0; }
       .timetable .timetable-container .timetable-container-item2 .group1-absolute {
+        width: 68px;
         top: 38%; }
       .timetable .timetable-container .timetable-container-item2 .group2-absolute {
+        width: 68px;
         bottom: 0;
         right: 0; }
       .timetable .timetable-container .timetable-container-item2 .group3-absolute {
+        width: 68px;
         left: 42%;
         bottom: 10%;
         transform: scaleX(-1); }
       .timetable .timetable-container .timetable-container-item2 .group4-absolute {
+        width: 68px;
         right: 17%;
         top: 34%;
         transform: scaleX(-1); }
       .timetable .timetable-container .timetable-container-item2 .group5-absolute {
+        width: 68px;
         right: 35%;
         top: 1%; }
       .timetable .timetable-container .timetable-container-item2 .group6-absolute {
+        width: 64px;
         left: 22%; }
       .timetable .timetable-container .timetable-container-item2 .group7-absolute {
         width: 72px;
@@ -492,9 +498,11 @@ img {
         bottom: 0;
         left: 10%; }
         .timetable .timetable-container .timetable-container-item2 .group7-absolute .group7-body-top {
+          width: 22px;
           bottom: 0;
           left: 44%; }
         .timetable .timetable-container .timetable-container-item2 .group7-absolute .group7-body-bottom {
+          width: 22px;
           bottom: 0;
           left: 34%; }
       .timetable .timetable-container .timetable-container-item2 .group8-absolute {
@@ -503,9 +511,11 @@ img {
         top: 31%;
         left: 27%; }
         .timetable .timetable-container .timetable-container-item2 .group8-absolute .group8-body-top {
+          width: 22px;
           bottom: 45%;
           left: 43%; }
         .timetable .timetable-container .timetable-container-item2 .group8-absolute .group8-body-bottom {
+          width: 22px;
           bottom: 30%;
           left: 29%; }
       .timetable .timetable-container .timetable-container-item2 .group9-absolute {
@@ -514,9 +524,11 @@ img {
         top: 44%;
         right: 36%; }
         .timetable .timetable-container .timetable-container-item2 .group9-absolute .group9-body-top {
+          width: 22px;
           bottom: 47%;
           left: 40%; }
         .timetable .timetable-container .timetable-container-item2 .group9-absolute .group9-body-bottom {
+          width: 22px;
           bottom: 30%;
           left: 29%; }
       .timetable .timetable-container .timetable-container-item2 .group10-absolute {
@@ -525,9 +537,11 @@ img {
         right: 1.4%;
         bottom: 18%; }
         .timetable .timetable-container .timetable-container-item2 .group10-absolute .group10-body-top {
+          width: 25px;
           bottom: 50%;
           left: 26%; }
         .timetable .timetable-container .timetable-container-item2 .group10-absolute .group10-body-bottom {
+          width: 24px;
           bottom: 29%;
           left: 33%; }
       .timetable .timetable-container .timetable-container-item2 .group11-absolute {
@@ -535,33 +549,52 @@ img {
         height: 32px;
         right: 17.5%; }
         .timetable .timetable-container .timetable-container-item2 .group11-absolute .group11-body-bottom {
+          width: 24px;
           left: 36%; }
       .timetable .timetable-container .timetable-container-item2 .group12-absolute {
         width: 65px;
         height: 50px;
         top: 16%;
         left: 8%; }
+        .timetable .timetable-container .timetable-container-item2 .group12-absolute .group12-left {
+          width: 29px; }
+        .timetable .timetable-container .timetable-container-item2 .group12-absolute .group12-right {
+          width: 34px; }
       .timetable .timetable-container .timetable-container-item2 .group13-absolute {
         width: 65px;
         height: 50px;
         bottom: 29%;
         left: 21%; }
+        .timetable .timetable-container .timetable-container-item2 .group13-absolute .group13-left {
+          width: 29px; }
+        .timetable .timetable-container .timetable-container-item2 .group13-absolute .group13-right {
+          width: 34px; }
       .timetable .timetable-container .timetable-container-item2 .group14-absolute {
         width: 65px;
         height: 50px;
         left: 46%;
         top: 19%; }
+        .timetable .timetable-container .timetable-container-item2 .group14-absolute .group14-left {
+          width: 29px; }
+        .timetable .timetable-container .timetable-container-item2 .group14-absolute .group14-right {
+          width: 34px; }
       .timetable .timetable-container .timetable-container-item2 .group15-absolute {
         width: 65px;
         height: 50px;
         right: 28%;
         bottom: 25%; }
         .timetable .timetable-container .timetable-container-item2 .group15-absolute .group15-left {
+          width: 38px;
           bottom: 0; }
         .timetable .timetable-container .timetable-container-item2 .group15-absolute .group15-right {
+          width: 34px;
           right: 0; }
       .timetable .timetable-container .timetable-container-item2 .group16-absolute {
         width: 65px;
         height: 50px;
         right: 5%;
         top: 23%; }
+        .timetable .timetable-container .timetable-container-item2 .group16-absolute .group16-left {
+          width: 29px; }
+        .timetable .timetable-container .timetable-container-item2 .group16-absolute .group16-right {
+          width: 34px; }
