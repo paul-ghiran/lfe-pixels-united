@@ -1,3 +1,71 @@
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #1c1c1c; }
+
+p {
+  margin-bottom: 0; }
+
+img {
+  width: 100%; }
+
+.margin-bottom {
+  margin-bottom: 20px; }
+
+.postarile-noastre {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  padding-top: 198px;
+  padding-bottom: 96px; }
+  .postarile-noastre .secondary-heading {
+    font-family: "Nobile", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: #fefaec;
+    margin-bottom: 48px; }
+  .postarile-noastre .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px; }
+    .postarile-noastre .grid-container .postare-card {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      border-radius: 5px; }
+      .postarile-noastre .grid-container .postare-card .heading-postare {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 32px 0 32px;
+        font-weight: 700; }
+        .postarile-noastre .grid-container .postare-card .heading-postare .instagram-logo {
+          width: 24px;
+          height: 24px; }
+      .postarile-noastre .grid-container .postare-card .postarile-description {
+        font-weight: 400;
+        line-height: 20.8px;
+        padding-right: 32px;
+        padding-left: 33px; }
+      .postarile-noastre .grid-container .postare-card .postarile-user-action {
+        margin-left: 33px;
+        margin-bottom: 32px;
+        display: flex;
+        gap: 6px; }
+        .postarile-noastre .grid-container .postare-card .postarile-user-action .heart,
+        .postarile-noastre .grid-container .postare-card .postarile-user-action .comment {
+          display: flex;
+          gap: 8px;
+          align-items: center; }
+          .postarile-noastre .grid-container .postare-card .postarile-user-action .heart .heart-icon,
+          .postarile-noastre .grid-container .postare-card .postarile-user-action .comment .heart-icon {
+            width: 21px;
+            height: 18.26; }
+          .postarile-noastre .grid-container .postare-card .postarile-user-action .heart .comment-icon,
+          .postarile-noastre .grid-container .postare-card .postarile-user-action .comment .comment-icon {
+            width: 18.3px;
+            height: 18.26px; }
