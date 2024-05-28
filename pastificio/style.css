@@ -1,6 +1,397 @@
+.most-popular {
+  background-color: #1c1c1c;
+  width: 100%;
+  height: 846px; }
+  .most-popular .products h3 {
+    font-family: "Nobile", sans-serif;
+    color: #fefaec;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    padding-top: 96px;
+    margin-bottom: 48px;
+    padding-left: 6px; }
+  .most-popular .products .cards-wrapper {
+    display: flex;
+    gap: 24px; }
+  .most-popular .products .cards {
+    background-color: #ffffff;
+    width: 384px;
+    height: 552px;
+    border-radius: 5px; }
+    .most-popular .products .cards img {
+      width: 384px;
+      height: 352px;
+      border-bottom: 3px solid #db9f55;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
+    .most-popular .products .cards .info-wrapper {
+      padding: 32px; }
+      .most-popular .products .cards .info-wrapper h5 {
+        font-family: "Mulish", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000;
+        margin-bottom: 8px; }
+      .most-popular .products .cards .info-wrapper p {
+        font-family: "Mulish", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000;
+        margin: 0; }
+      .most-popular .products .cards .info-wrapper .price-box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        height: 36px; }
+        .most-popular .products .cards .info-wrapper .price-box p {
+          font-family: "Mulish", sans-serif;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 36px; }
+        .most-popular .products .cards .info-wrapper .price-box .img-wrapper {
+          width: 36px;
+          height: 36px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .most-popular .products .cards .info-wrapper .price-box img {
+          width: 24px;
+          height: 24px;
+          border: none; }
+
+.value {
+  background: #1c1c1c;
+  width: 100%;
+  height: 414px; }
+  .value .container {
+    padding: 95px 0 95px 0;
+    justify-content: space-evenly;
+    margin: 0 360px 0 360px;
+    align-items: center; }
+  .value .card1 {
+    width: 211px;
+    height: 223px; }
+    .value .card1 img {
+      width: 123px;
+      height: 141px;
+      margin: 0 45px 49px 45px; }
+    .value .card1 p {
+      font-family: Mulish;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      color: #fefaec; }
+
+.card2 {
+  width: 188px;
+  height: 223px;
+  text-align: center; }
+  .card2 img {
+    width: 159px;
+    height: 141px;
+    margin: 0 14px 49px 15px; }
+  .card2 p {
+    font-family: Mulish, sans serif;
+    font-size: 24px;
+    line-height: 32.4px;
+    color: #fefaec; }
+
+.card3 {
+  width: 214px;
+  height: 223px;
+  text-align: center; }
+  .card3 img {
+    width: 159px;
+    height: 141px;
+    margin: 0 37px 49px 37px; }
+  .card3 p {
+    font-family: Mulish;
+    font-size: 24px;
+    line-height: 32.4px;
+    color: #fefaec; }
+
+/* Banner */
+.banner {
+  background-size: cover;
+  /* background-size: 100% 100%;
+  background-repeat: no-repeat; */
+  background-image: url("./image.png");
+  height: 952px;
+  display: flex;
+  align-items: center; }
+
+.wrapper {
+  text-align: left;
+  margin-left: 360px; }
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  color: #fefaec;
+  text-align: left;
+  line-height: 64.8px;
+  font-family: "Nobile", sans-serif; }
+
+.button-comanda {
+  font-family: "Mulish", sans-serif;
+  margin-top: 48px;
+  width: 165px;
+  height: 56px;
+  border-radius: 4px;
+  padding: 18px 24px;
+  background-color: #db9f55;
+  color: #1c1c1c;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 20.08px;
+  display: inline-block; }
+
+.navbar-div {
+  display: flex;
+  align-items: center; }
+
+#logo {
+  align-self: flex-start; }
+
+.meniu {
+  align-self: flex-end; }
+
+.navbar {
+  font-family: "Mulish", sans-serif;
+  background-color: #1c1c1c;
+  height: 96px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25); }
+  .navbar .logo {
+    width: 163.56px;
+    height: 64px; }
+  .navbar a {
+    text-decoration: none;
+    color: #fefaec;
+    font-weight: 400;
+    font-size: 16px; }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    padding: 0;
+    margin: 0; }
+
+/*Maria sectiune*/
+.wrapper-2 {
+  background-image: url("./paste-banner-2.png");
+  height: 554px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .wrapper-2 span {
+    font-family: "Nobile";
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+    text-align: center;
+    color: #fefaec;
+    padding-top: 144px; }
+  .wrapper-2 .btn-2 {
+    color: #000000;
+    font-family: "Mulish";
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #db9f55;
+    padding: 18px 24px;
+    border-radius: 4px;
+    margin-top: 48px;
+    margin-bottom: 144px; }
+    .wrapper-2 .btn-2:hover {
+      background-color: #d48a3b;
+      color: white; }
+    .wrapper-2 .btn-2:active {
+      background-color: #c67230; }
+
+.recenziile-clientilor {
+  background-color: #1c1c1c;
+  height: 672px; }
+  .recenziile-clientilor p {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 21.6px;
+    color: #000; }
+  .recenziile-clientilor .span-text {
+    display: flex;
+    justify-content: end; }
+  .recenziile-clientilor span {
+    width: 78px;
+    height: 22px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 21.6px;
+    color: #000; }
+  .recenziile-clientilor img {
+    width: 200px;
+    height: 36px; }
+  .recenziile-clientilor .row,
+  .recenziile-clientilor .col {
+    padding: 0;
+    margin: 0; }
+  .recenziile-clientilor h2 {
+    color: #fefaec;
+    margin-top: 96px;
+    margin-bottom: 48px;
+    height: 54px; }
+  .recenziile-clientilor .r-box-1 {
+    width: 384px;
+    height: 378px;
+    border-radius: 5px;
+    padding-bottom: 96px;
+    margin-right: 24px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; }
+    .recenziile-clientilor .r-box-1 p {
+      width: 320px;
+      height: 132px;
+      margin: 32px 32px 76px 32px;
+      color: #1c1c1c; }
+    .recenziile-clientilor .r-box-1 span {
+      margin-right: 32px;
+      margin-bottom: 48px; }
+    .recenziile-clientilor .r-box-1 .star-icon {
+      display: flex;
+      justify-content: end; }
+      .recenziile-clientilor .r-box-1 .star-icon img {
+        color: #db9f55;
+        margin-right: 32px;
+        margin-bottom: 32px; }
+  .recenziile-clientilor .r-box-2 {
+    width: 384px;
+    height: 378px;
+    border-radius: 5px;
+    padding-bottom: 96px;
+    margin-right: 24px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; }
+    .recenziile-clientilor .r-box-2 p {
+      width: 320px;
+      height: 176px;
+      margin: 32px; }
+    .recenziile-clientilor .r-box-2 span {
+      display: flex;
+      justify-content: end;
+      margin-right: 33px;
+      margin-bottom: 48px; }
+    .recenziile-clientilor .r-box-2 .star-icon {
+      display: flex;
+      justify-content: end; }
+      .recenziile-clientilor .r-box-2 .star-icon img {
+        color: #db9f55;
+        margin-right: 32px;
+        margin-bottom: 32px; }
+  .recenziile-clientilor .r-box-3 {
+    width: 384px;
+    height: 378px;
+    border-radius: 5px;
+    padding-bottom: 96px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; }
+    .recenziile-clientilor .r-box-3 p {
+      width: 320px;
+      height: 88px;
+      margin: 32px 32px 120px 32px; }
+    .recenziile-clientilor .r-box-3 span {
+      display: flex;
+      justify-content: end;
+      margin-right: 33px;
+      margin-bottom: 48px;
+      font-family: Arial, sans-serif; }
+    .recenziile-clientilor .r-box-3 .star-icon {
+      display: flex;
+      justify-content: end; }
+      .recenziile-clientilor .r-box-3 .star-icon img {
+        color: #db9f55;
+        margin-right: 32px;
+        margin-bottom: 32px; }
+
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #1c1c1c; }
+
+p {
+  margin-bottom: 0; }
+
+img {
+  width: 100%; }
+
+.margin-bottom {
+  margin-bottom: 20px; }
+
+.postarile-noastre {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  padding-top: 198px;
+  padding-bottom: 96px; }
+  .postarile-noastre .secondary-heading {
+    font-family: "Nobile", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: #fefaec;
+    margin-bottom: 48px; }
+  .postarile-noastre .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px; }
+    .postarile-noastre .grid-container .postare-card {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      border-radius: 5px; }
+      .postarile-noastre .grid-container .postare-card .heading-postare {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 32px 0 32px;
+        font-weight: 700; }
+        .postarile-noastre .grid-container .postare-card .heading-postare .instagram-logo {
+          width: 24px;
+          height: 24px; }
+      .postarile-noastre .grid-container .postare-card .postarile-description {
+        font-weight: 400;
+        line-height: 20.8px;
+        padding-right: 32px;
+        padding-left: 33px; }
+      .postarile-noastre .grid-container .postare-card .postarile-user-action {
+        margin-left: 33px;
+        margin-bottom: 32px;
+        display: flex;
+        gap: 6px; }
+        .postarile-noastre .grid-container .postare-card .postarile-user-action .heart,
+        .postarile-noastre .grid-container .postare-card .postarile-user-action .comment {
+          display: flex;
+          gap: 8px;
+          align-items: center; }
+          .postarile-noastre .grid-container .postare-card .postarile-user-action .heart .heart-icon,
+          .postarile-noastre .grid-container .postare-card .postarile-user-action .comment .heart-icon {
+            width: 21px;
+            height: 18.26; }
+          .postarile-noastre .grid-container .postare-card .postarile-user-action .heart .comment-icon,
+          .postarile-noastre .grid-container .postare-card .postarile-user-action .comment .comment-icon {
+            width: 18.3px;
+            height: 18.26px; }
 
 .timetable {
   background-color: #1c1c1c;
