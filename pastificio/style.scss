@@ -2,3 +2,218 @@
   padding: 0;
   margin: 0;
 }
+.timetable {
+  background-color: #1c1c1c;
+  height: 390px;
+  @media (max-width: 992px) {
+    height: 780px;
+  }
+  /*sectiunea principala care se intinde pe toata latimea ecranului si are 
+  bkg color si 2 inltimi specificate una pentru ecrane mari si una de la ecrane 
+  medii in jos cand diviziunile trec de pe orizontala pe vertical*/
+  .timetable-container {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 0;
+    }
+    /*containerul din sectiune are paddingul si marginul aferent bootstrap care
+    este variabil si are display flex plus 2 com de layout alaturi de comportamentul
+    pt ecrane medii*/
+    .timetable-container-item1 {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /*primul item din din container contine 2 div uri verticale si centrate 
+      cu display flex si are com flex 1 care ii spune sa ocupe tot spatiul care 
+      se poate ocupa*/
+      .timetable-title {
+        margin-bottom: 24px;
+
+        h2 {
+          color: #fefaec;
+          font-family: Nobile;
+          font-size: 36px;
+          font-weight: 500;
+          line-height: 54px;
+          margin-bottom: 0;
+        }
+      }
+      /*titlul din primului item*/
+      .timetable-text {
+        display: flex;
+        justify-content: space-between;
+        max-width: 390px;
+      /*tabelul din primul item are display flex si 2 diviziui orizontale si  
+      o lungime maxima iar diviziunile au comande de a lasa spatiu intre ele 
+      cat este posibil (nu este un tabel propriuzis)*/
+        p {
+          margin-bottom: 8px;
+          color: #fefaec;
+          font-family: Mulish;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        .timetable-days,
+        .timetable-intervals {
+          display: inline-block;
+        }
+        /*paragrafele din cele 2 tabele cu zile si cu intervale vor fi afisate 
+        pe verticala*/
+      }
+    }
+    
+    .timetable-container-item2 {
+      flex: 1;
+      position: relative;
+      @media (max-width: 992px) {
+        border-top: 2px groove #db9f55;
+      }
+      .pasta-img {
+        position: absolute;
+      }
+      /*Toate imaginile vor avea container si clasa pasta-img cu exceptia 
+      primelor 6 elemente care au o singura imagine si e pusa clasa direct pe
+      container*/
+      .macaroni-right-img {
+        right: 0;
+        bottom: 0;
+      }
+      /*4 din cele cinci group cu macaron au 2 poze dintre care una e in
+      dreapta si se afla in dreapta jos fata de container*/
+      .group1-absolute {
+        top: 38%;
+      }
+      .group2-absolute {
+        bottom: 0;
+        right: 0;
+      }
+      .group3-absolute {
+        left: 42%;
+        bottom: 10%;
+        transform: scaleX(-1);
+      }
+      .group4-absolute {
+        right: 17%;
+        top: 34%;
+        transform: scaleX(-1);
+      }
+      .group5-absolute {
+        right: 35%;
+        top: 1%;
+      }
+      .group6-absolute {
+        left: 22%;
+      }
+      .group7-absolute {
+        width: 72px;
+        height: 36px;
+        bottom: 0;
+        left: 10%;
+        
+        .group7-body-top {
+          bottom: 0;
+          left: 44%;
+        }
+        .group7-body-bottom {
+          bottom: 0;
+          left: 34%;
+        }
+      }
+      .group8-absolute {
+        width: 72px;
+        height: 68px;
+        top: 31%;
+        left: 27%;
+        .group8-body-top {
+          bottom: 45%;
+          left: 43%;
+        }
+        .group8-body-bottom {
+          bottom: 30%;
+          left: 29%;
+        }
+      }
+      .group9-absolute {
+        width: 72px;
+        height: 67px;
+        top: 44%;
+        right: 36%;
+        .group9-body-top {
+          bottom: 47%;
+          left: 40%;
+        }
+        .group9-body-bottom {
+          bottom: 30%;
+          left: 29%;
+        }
+      }
+      .group10-absolute {
+        width: 69px;
+        height: 64px;
+        right: 1.4%;
+        bottom: 18%;
+        .group10-body-top {
+          bottom: 50%;
+          left: 26%;
+        }
+        .group10-body-bottom {
+          bottom: 29%;
+          left: 33%;
+        }
+      }
+      .group11-absolute {
+        width: 69px;
+        height: 32px;
+        right: 17.5%;
+        .group11-body-bottom {
+          left: 36%;
+        }
+      }
+      .group12-absolute {
+        width: 65px;
+        height: 50px;
+        top: 16%;
+        left: 8%;
+      }
+      .group13-absolute {
+        width: 65px;
+        height: 50px;
+        bottom: 29%;
+        left: 21%;
+      }
+      .group14-absolute {
+        width: 65px;
+        height: 50px;
+        left: 46%;
+        top: 19%;
+      }
+      .group15-absolute {
+        width: 65px;
+        height: 50px;
+        right: 28%;
+        bottom: 25%;
+        .group15-left {
+            bottom: 0;
+        }
+        .group15-right {
+          right: 0;
+        }
+      }
+      .group16-absolute {
+        width: 65px;
+        height: 50px;
+        right: 5%;
+        top: 23%;
+      }
+    }
+  }
+}
