@@ -592,39 +592,59 @@ img {
       .group1-absolute {
         width: 68px;
         top: 38%;
+        img {
+          width: 68px;
+        }
       }
       .group2-absolute {
         width: 68px;
         bottom: 0;
         right: 0;
+        img {
+          width: 68px;
+        }
       }
       .group3-absolute {
         width: 68px;
         left: 42%;
         bottom: 10%;
         transform: scaleX(-1);
+        img {
+          width: 68px;
+        }
       }
       .group4-absolute {
         width: 68px;
         right: 17%;
         top: 34%;
         transform: scaleX(-1);
+        img {
+          width: 68px;
+        }
       }
       .group5-absolute {
         width: 68px;
         right: 35%;
         top: 1%;
+        img {
+          width: 68px;
+        }
       }
       .group6-absolute {
         width: 64px;
         left: 22%;
+        img {
+          width: 64px;
+        }
       }
       .group7-absolute {
         width: 72px;
         height: 36px;
         bottom: 0;
         left: 10%;
-        
+        .group7-body {
+          width: 72px;
+        }
         .group7-body-top {
           width: 22px;
           bottom: 0;
@@ -641,6 +661,9 @@ img {
         height: 68px;
         top: 31%;
         left: 27%;
+        .group8-body {
+          width: 72px;
+        }
         .group8-body-top {
           width: 22px;
           bottom: 45%;
@@ -657,6 +680,9 @@ img {
         height: 67px;
         top: 44%;
         right: 36%;
+        .group9-body {
+          width: 72px;
+        }
         .group9-body-top {
           width: 22px;
           bottom: 47%;
@@ -673,6 +699,9 @@ img {
         height: 64px;
         right: 1.4%;
         bottom: 18%;
+        .group10-body {
+          width: 69px;
+        }
         .group10-body-top {
           width: 25px;
           bottom: 50%;
@@ -688,6 +717,9 @@ img {
         width: 69px;
         height: 32px;
         right: 17.5%;
+        .group11-body {
+          width: 69px;
+        }
         .group11-body-bottom {
           width: 24px;
           left: 36%;

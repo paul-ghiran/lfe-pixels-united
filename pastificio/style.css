@@ -471,32 +471,46 @@ img {
       .timetable .timetable-container .timetable-container-item2 .group1-absolute {
         width: 68px;
         top: 38%; }
+        .timetable .timetable-container .timetable-container-item2 .group1-absolute img {
+          width: 68px; }
       .timetable .timetable-container .timetable-container-item2 .group2-absolute {
         width: 68px;
         bottom: 0;
         right: 0; }
+        .timetable .timetable-container .timetable-container-item2 .group2-absolute img {
+          width: 68px; }
       .timetable .timetable-container .timetable-container-item2 .group3-absolute {
         width: 68px;
         left: 42%;
         bottom: 10%;
         transform: scaleX(-1); }
+        .timetable .timetable-container .timetable-container-item2 .group3-absolute img {
+          width: 68px; }
       .timetable .timetable-container .timetable-container-item2 .group4-absolute {
         width: 68px;
         right: 17%;
         top: 34%;
         transform: scaleX(-1); }
+        .timetable .timetable-container .timetable-container-item2 .group4-absolute img {
+          width: 68px; }
       .timetable .timetable-container .timetable-container-item2 .group5-absolute {
         width: 68px;
         right: 35%;
         top: 1%; }
+        .timetable .timetable-container .timetable-container-item2 .group5-absolute img {
+          width: 68px; }
       .timetable .timetable-container .timetable-container-item2 .group6-absolute {
         width: 64px;
         left: 22%; }
+        .timetable .timetable-container .timetable-container-item2 .group6-absolute img {
+          width: 64px; }
       .timetable .timetable-container .timetable-container-item2 .group7-absolute {
         width: 72px;
         height: 36px;
         bottom: 0;
         left: 10%; }
+        .timetable .timetable-container .timetable-container-item2 .group7-absolute .group7-body {
+          width: 72px; }
         .timetable .timetable-container .timetable-container-item2 .group7-absolute .group7-body-top {
           width: 22px;
           bottom: 0;
@@ -510,6 +524,8 @@ img {
         height: 68px;
         top: 31%;
         left: 27%; }
+        .timetable .timetable-container .timetable-container-item2 .group8-absolute .group8-body {
+          width: 72px; }
         .timetable .timetable-container .timetable-container-item2 .group8-absolute .group8-body-top {
           width: 22px;
           bottom: 45%;
@@ -523,6 +539,8 @@ img {
         height: 67px;
         top: 44%;
         right: 36%; }
+        .timetable .timetable-container .timetable-container-item2 .group9-absolute .group9-body {
+          width: 72px; }
         .timetable .timetable-container .timetable-container-item2 .group9-absolute .group9-body-top {
           width: 22px;
           bottom: 47%;
@@ -536,6 +554,8 @@ img {
         height: 64px;
         right: 1.4%;
         bottom: 18%; }
+        .timetable .timetable-container .timetable-container-item2 .group10-absolute .group10-body {
+          width: 69px; }
         .timetable .timetable-container .timetable-container-item2 .group10-absolute .group10-body-top {
           width: 25px;
           bottom: 50%;
@@ -548,6 +568,8 @@ img {
         width: 69px;
         height: 32px;
         right: 17.5%; }
+        .timetable .timetable-container .timetable-container-item2 .group11-absolute .group11-body {
+          width: 69px; }
         .timetable .timetable-container .timetable-container-item2 .group11-absolute .group11-body-bottom {
           width: 24px;
           left: 36%; }
