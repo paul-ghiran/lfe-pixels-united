@@ -621,6 +621,18 @@ img {
         .timetable .timetable-container .timetable-container-item2 .group16-absolute .group16-right {
           width: 34px; }
 
+footer {
+  text-align: center;
+  padding: 100px 0;
+  border-top: 3px solid #777; }
+  footer span {
+    line-height: 100px;
+    display: inline-block;
+    color: white; }
+  footer img {
+    height: 100px;
+    margin-left: 30px;
+    width: auto; }
 .locatie {
   padding: 118px 0 72px 0;
   background-image: url(./harta.png);
