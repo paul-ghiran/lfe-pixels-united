@@ -637,3 +637,5 @@ img {
     @media screen and (max-width: 992px) {
       .locatie__info {
         width: 100%; } }
+.red {
+  color: red; }
