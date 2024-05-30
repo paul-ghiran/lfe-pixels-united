@@ -894,3 +894,29 @@ footer {
 
   }
 }
+
+.locatie {
+  padding: 118px 0 72px 0;
+  background-image: url(./harta.png);
+  background-size: cover;
+
+
+  &__info {
+    font-family: 'Mulish', sans-serif;
+    text-align: left;
+    display: inline-block;
+    padding: 32px;
+    width: auto;
+    background: #1c1c1c;
+    color: #FEFAEC;
+    margin: auto;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;      
+    }
+  }
+}
+
+.red {
+  color: red;
+}
