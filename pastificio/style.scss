@@ -19,6 +19,7 @@
       display: flex;
       gap: 24px;
     }
+
     .cards {
       background-color: #ffffff;
       width: 384px;
@@ -35,6 +36,7 @@
 
       .info-wrapper {
         padding: 32px;
+
         h5 {
           font-family: "Mulish", sans-serif;
           font-weight: 700;
@@ -43,6 +45,7 @@
           color: #000;
           margin-bottom: 8px;
         }
+
         p {
           font-family: "Mulish", sans-serif;
           font-weight: 400;
@@ -51,17 +54,20 @@
           color: #000;
           margin: 0;
         }
+
         .price-box {
           display: flex;
           justify-content: space-between;
           margin-top: 32px;
           height: 36px;
+
           p {
             font-family: "Mulish", sans-serif;
             font-weight: 700;
             font-size: 24px;
             line-height: 36px;
           }
+
           .img-wrapper {
             width: 36px;
             height: 36px;
@@ -69,6 +75,7 @@
             justify-content: center;
             align-items: center;
           }
+
           img {
             width: 24px;
             height: 24px;
@@ -231,6 +238,7 @@ h2 {
     margin: 0;
   }
 }
+
 /*Maria sectiune*/
 .wrapper-2 {
   background-image: url("./paste-banner-2.png");
@@ -239,6 +247,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   span {
     font-family: "Nobile";
     font-size: 36px;
@@ -248,6 +257,7 @@ h2 {
     color: #fefaec;
     padding-top: 144px;
   }
+
   .btn-2 {
     color: #000000;
     font-family: "Mulish";
@@ -258,10 +268,12 @@ h2 {
     border-radius: 4px;
     margin-top: 48px;
     margin-bottom: 144px;
+
     &:hover {
       background-color: #d48a3b;
       color: white;
     }
+
     &:active {
       background-color: #c67230;
     }
@@ -271,6 +283,7 @@ h2 {
 .recenziile-clientilor {
   background-color: #1c1c1c;
   height: 672px;
+
   p {
     font-family: "Mulish", sans-serif;
     font-weight: 400;
@@ -279,10 +292,12 @@ h2 {
     line-height: 21.6px;
     color: #000;
   }
+
   .span-text {
     display: flex;
     justify-content: end;
   }
+
   span {
     width: 78px;
     height: 22px;
@@ -321,6 +336,7 @@ h2 {
     background-color: #fff;
     display: flex;
     flex-direction: column;
+
     p {
       width: 320px;
       height: 132px;
@@ -336,6 +352,7 @@ h2 {
     .star-icon {
       display: flex;
       justify-content: end;
+
       img {
         color: #db9f55;
         margin-right: 32px;
@@ -353,20 +370,24 @@ h2 {
     background-color: #fff;
     display: flex;
     flex-direction: column;
+
     p {
       width: 320px;
       height: 176px;
       margin: 32px;
     }
+
     span {
       display: flex;
       justify-content: end;
       margin-right: 33px;
       margin-bottom: 48px;
     }
+
     .star-icon {
       display: flex;
       justify-content: end;
+
       img {
         color: #db9f55;
         margin-right: 32px;
@@ -374,6 +395,7 @@ h2 {
       }
     }
   }
+
   .r-box-3 {
     width: 384px;
     height: 378px;
@@ -382,11 +404,13 @@ h2 {
     background-color: #fff;
     display: flex;
     flex-direction: column;
+
     p {
       width: 320px;
       height: 88px;
       margin: 32px 32px 120px 32px;
     }
+
     span {
       display: flex;
       justify-content: end;
@@ -394,9 +418,11 @@ h2 {
       margin-bottom: 48px;
       font-family: Arial, sans-serif;
     }
+
     .star-icon {
       display: flex;
       justify-content: end;
+
       img {
         color: #db9f55;
         margin-right: 32px;
@@ -502,12 +528,15 @@ img {
     }
   }
 }
+
 .timetable {
   background-color: #1c1c1c;
   height: 390px;
+
   @media (max-width: 992px) {
     height: 780px;
   }
+
   /*sectiunea principala care se intinde pe toata latimea ecranului si are 
   bkg color si 2 inltimi specificate una pentru ecrane mari si una de la ecrane 
   medii in jos cand diviziunile trec de pe orizontala pe vertical*/
@@ -520,6 +549,7 @@ img {
       flex-direction: column;
       gap: 0;
     }
+
     /*containerul din sectiune are paddingul si marginul aferent bootstrap care
     este variabil si are display flex plus 2 com de layout alaturi de comportamentul
     pt ecrane medii*/
@@ -528,6 +558,7 @@ img {
       display: flex;
       flex-direction: column;
       justify-content: center;
+
       /*primul item din din container contine 2 div uri verticale si centrate 
       cu display flex si are com flex 1 care ii spune sa ocupe tot spatiul care 
       se poate ocupa*/
@@ -543,12 +574,14 @@ img {
           margin-bottom: 0;
         }
       }
+
       /*titlul din primului item*/
       .timetable-text {
         display: flex;
         justify-content: space-between;
         max-width: 390px;
-      /*tabelul din primul item are display flex si 2 diviziui orizontale si  
+
+        /*tabelul din primul item are display flex si 2 diviziui orizontale si  
       o lungime maxima iar diviziunile au comande de a lasa spatiu intre ele 
       cat este posibil (nu este un tabel propriuzis)*/
         p {
@@ -558,28 +591,34 @@ img {
           font-size: 16px;
           font-weight: 700;
           line-height: 24px;
+
           &:last-child {
             margin-bottom: 0;
           }
         }
+
         .timetable-days,
         .timetable-intervals {
           display: inline-block;
         }
+
         /*paragrafele din cele 2 tabele cu zile si cu intervale vor fi afisate 
         pe verticala*/
       }
     }
-    
+
     .timetable-container-item2 {
       flex: 1;
       position: relative;
+
       @media (max-width: 992px) {
         border-top: 2px groove #db9f55;
       }
+
       .pasta-img {
         position: absolute;
       }
+
       /*Toate imaginile vor avea container si clasa pasta-img cu exceptia 
       primelor 6 elemente care au o singura imagine si e pusa clasa direct pe
       container*/
@@ -587,206 +626,271 @@ img {
         right: 0;
         bottom: 0;
       }
+
       /*4 din cele cinci group cu macaron au 2 poze dintre care una e in
       dreapta si se afla in dreapta jos fata de container*/
       .group1-absolute {
         width: 68px;
         top: 38%;
+
         img {
           width: 68px;
         }
       }
+
       .group2-absolute {
         width: 68px;
         bottom: 0;
         right: 0;
+
         img {
           width: 68px;
         }
       }
+
       .group3-absolute {
         width: 68px;
         left: 42%;
         bottom: 10%;
         transform: scaleX(-1);
+
         img {
           width: 68px;
         }
       }
+
       .group4-absolute {
         width: 68px;
         right: 17%;
         top: 34%;
         transform: scaleX(-1);
+
         img {
           width: 68px;
         }
       }
+
       .group5-absolute {
         width: 68px;
         right: 35%;
         top: 1%;
+
         img {
           width: 68px;
         }
       }
+
       .group6-absolute {
         width: 64px;
         left: 22%;
+
         img {
           width: 64px;
         }
       }
+
       .group7-absolute {
         width: 72px;
         height: 36px;
         bottom: 0;
         left: 10%;
+
         .group7-body {
           width: 72px;
         }
+
         .group7-body-top {
           width: 22px;
           bottom: 0;
           left: 44%;
         }
+
         .group7-body-bottom {
           width: 22px;
           bottom: 0;
           left: 34%;
         }
       }
+
       .group8-absolute {
         width: 72px;
         height: 68px;
         top: 31%;
         left: 27%;
+
         .group8-body {
           width: 72px;
         }
+
         .group8-body-top {
           width: 22px;
           bottom: 45%;
           left: 43%;
         }
+
         .group8-body-bottom {
           width: 22px;
           bottom: 30%;
           left: 29%;
         }
       }
+
       .group9-absolute {
         width: 72px;
         height: 67px;
         top: 44%;
         right: 36%;
+
         .group9-body {
           width: 72px;
         }
+
         .group9-body-top {
           width: 22px;
           bottom: 47%;
           left: 40%;
         }
+
         .group9-body-bottom {
           width: 22px;
           bottom: 30%;
           left: 29%;
         }
       }
+
       .group10-absolute {
         width: 69px;
         height: 64px;
         right: 1.4%;
         bottom: 18%;
+
         .group10-body {
           width: 69px;
         }
+
         .group10-body-top {
           width: 25px;
           bottom: 50%;
           left: 26%;
         }
+
         .group10-body-bottom {
           width: 24px;
           bottom: 29%;
           left: 33%;
         }
       }
+
       .group11-absolute {
         width: 69px;
         height: 32px;
         right: 17.5%;
+
         .group11-body {
           width: 69px;
         }
+
         .group11-body-bottom {
           width: 24px;
           left: 36%;
         }
       }
+
       .group12-absolute {
         width: 65px;
         height: 50px;
         top: 16%;
         left: 8%;
+
         .group12-left {
           width: 29px;
         }
+
         .group12-right {
           width: 34px;
         }
       }
+
       .group13-absolute {
         width: 65px;
         height: 50px;
         bottom: 29%;
         left: 21%;
+
         .group13-left {
           width: 29px;
         }
+
         .group13-right {
           width: 34px;
         }
       }
+
       .group14-absolute {
         width: 65px;
         height: 50px;
         left: 46%;
         top: 19%;
+
         .group14-left {
           width: 29px;
         }
+
         .group14-right {
           width: 34px;
         }
       }
+
       .group15-absolute {
         width: 65px;
         height: 50px;
         right: 28%;
         bottom: 25%;
+
         .group15-left {
-            width: 38px;
-            bottom: 0;
+          width: 38px;
+          bottom: 0;
         }
+
         .group15-right {
           width: 34px;
           right: 0;
         }
       }
+
       .group16-absolute {
         width: 65px;
         height: 50px;
         right: 5%;
         top: 23%;
+
         .group16-left {
           width: 29px;
         }
+
         .group16-right {
           width: 34px;
         }
       }
     }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 100px 0;
+  border-top: 3px solid #777;
+
+  span {
+    line-height: 100px;
+    display: inline-block;
+    color: white;
+  }
+
+  img {
+    height: 100px;
+    margin-left: 30px;
+    width: auto;
+
   }
 }
