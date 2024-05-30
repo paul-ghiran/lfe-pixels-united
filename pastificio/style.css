@@ -639,6 +639,7 @@ footer {
   .contact h3 {
     color: wheat;
     text-align: center; }
+
 .locatie {
   padding: 118px 0 72px 0;
   background-image: url(./harta.png);
@@ -655,5 +656,3 @@ footer {
     @media screen and (max-width: 992px) {
       .locatie__info {
         width: 100%; } }
-.red {
-  color: red; }
