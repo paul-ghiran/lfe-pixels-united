@@ -883,7 +883,6 @@ img {
 
 
   &__info {
-
     font-family: 'Mulish', sans-serif;
     text-align: left;
     display: inline-block;
@@ -892,5 +891,9 @@ img {
     background: #1c1c1c;
     color: #FEFAEC;
     margin: auto;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;      
+    }
   }
 }

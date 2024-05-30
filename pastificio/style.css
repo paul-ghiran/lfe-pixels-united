@@ -634,3 +634,6 @@ img {
     background: #1c1c1c;
     color: #FEFAEC;
     margin: auto; }
+    @media screen and (max-width: 992px) {
+      .locatie__info {
+        width: 100%; } }
