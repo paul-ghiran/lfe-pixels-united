@@ -633,6 +633,12 @@ footer {
     height: 100px;
     margin-left: 30px;
     width: auto; }
+
+.contact {
+  padding-bottom: 50px; }
+  .contact h3 {
+    color: wheat;
+    text-align: center; }
 .locatie {
   padding: 118px 0 72px 0;
   background-image: url(./harta.png);
