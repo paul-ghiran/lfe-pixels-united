@@ -458,8 +458,8 @@ img {
 .postarile-noastre {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
-  padding-top: 198px;
-  padding-bottom: 96px;
+  margin-top: 198px;
+  margin-bottom: 96px;
 
   .secondary-heading {
     font-family: "Nobile", sans-serif;
@@ -891,10 +891,8 @@ footer {
     height: 100px;
     margin-left: 30px;
     width: auto;
-
   }
 }
-
 
 .contact {
   padding-bottom: 50px;
@@ -903,7 +901,6 @@ footer {
     color: wheat;
     text-align: center;
   }
-
 }
 
 .locatie {
@@ -911,19 +908,18 @@ footer {
   background-image: url(./harta.png);
   background-size: cover;
 
-
   &__info {
-    font-family: 'Mulish', sans-serif;
+    font-family: "Mulish", sans-serif;
     text-align: left;
     display: inline-block;
     padding: 32px;
     width: auto;
     background: #1c1c1c;
-    color: #FEFAEC;
+    color: #fefaec;
     margin: auto;
 
     @media screen and (max-width: 992px) {
-      width: 100%;      
+      width: 100%;
     }
   }
 }
