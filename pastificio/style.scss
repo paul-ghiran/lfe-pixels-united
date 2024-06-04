@@ -923,3 +923,35 @@ footer {
     }
   }
 }
+
+
+footer+section {
+  width: 600px;
+  background-color: red;
+  height: 100px;
+  height: 200px;
+}
+
+footer+section {
+  background-color: blue;
+
+
+  @media (max-width: 1000px) {
+    background-color: green;
+
+    a {
+      font-weight: bold;
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  footer+section {
+    background-color: red;
+  }
+
+  a {
+    font-weight: bold;
+  }
+}
