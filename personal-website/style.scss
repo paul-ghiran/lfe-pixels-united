@@ -2,6 +2,145 @@
   padding: 0;
   margin: 0;
 }
+
+.skills{
+  height: 560px;
+ 
+
+  padding: 96px 80px;
+
+
+  .container{
+   
+    height: 368px;
+    padding: 0px 32px;
+
+    .row{
+      justify-content: center;
+      .first{
+        width: 75px;
+        height: 28px;
+        border-radius: 12px;
+        padding: 4px 20px;
+        background-color: #E5E7EB;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        font-family: "Inter", sans-serif;
+        color: #4B5563;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h4{
+        
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: #4B5563;
+        
+
+
+      
+      }
+    }
+
+    .technologies{
+      margin-top:44px ;
+      display: flex;
+      flex-direction: column;
+      gap:48px;
+      
+      .upper{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        .tech{
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+
+          &:nth-child(5){
+            img{
+              width: 56px;
+            }
+          }
+          img{
+            width: 64px;
+            height: 64px;
+          }
+
+          p{
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            margin-bottom: 0;
+            color: #4B5563;
+          }
+        }
+      }
+
+      .bottom{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        .tech{
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+
+          &:nth-child(2){
+            img{
+              width: 30px;
+            }
+          }
+
+          &:nth-child(4){
+            img{
+              width: 103px;
+            }
+          }
+          &:nth-child(5){
+            img{
+              width: 43px;
+            }
+          }
+          img{
+            width: 64px;
+            height: 64px;
+            
+           
+          }
+         
+          
+         
+
+          p{
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            margin-bottom: 0;
+            color: #4B5563;
+          }
+        }
+      
+      }
+    }
+  }
+}
+
 .about {
   display: flex;
   justify-content: space-between;
@@ -118,5 +257,6 @@ $darkgray: #111827;
   .icon-button{
     display: flex;
     gap: 16px;
+
   }
 }
