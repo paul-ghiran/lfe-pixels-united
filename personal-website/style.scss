@@ -2,6 +2,72 @@
   padding: 0;
   margin: 0;
 }
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 96px 80px;
+  background-color: #F9FAFB;
+  .about-container {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    .tag-about {
+      text-wrap: nowrap;
+      width: 105px;
+      height: 28px;
+      padding: 4px 20px;
+      border-radius: 12px;
+      background-color: #E5E7EB;
+      text-align: center;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+    .pic-text-about {
+      display: flex;
+      gap: 48px;
+      @media (max-width: 1053px){
+        flex-direction: column;
+        align-items: center;
+      }
+      .pic-about {
+        flex: 1 1 0;
+        margin-left: 40px;
+        position: relative;
+        img {
+          border: 8px white;
+          width: 400px;
+          height: 480px;
+        }
+
+      }
+      .text-about {
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 24px;
+        .text-title {
+          font-family: Inter;
+          font-size: 30px;
+          font-weight: 600;
+          line-height: 36px;
+          letter-spacing: -0.02em;
+        }
+        .text-p {
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
 
 $primaryfont: "Inter";
 $lightgray: #4B5563;

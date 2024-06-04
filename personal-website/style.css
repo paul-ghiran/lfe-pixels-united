@@ -2,6 +2,64 @@
   padding: 0;
   margin: 0; }
 
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 96px 80px;
+  background-color: #F9FAFB; }
+  .about .about-container {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px; }
+    .about .about-container .tag-about {
+      text-wrap: nowrap;
+      width: 105px;
+      height: 28px;
+      padding: 4px 20px;
+      border-radius: 12px;
+      background-color: #E5E7EB;
+      text-align: center;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px; }
+    .about .about-container .pic-text-about {
+      display: flex;
+      gap: 48px; }
+      @media (max-width: 1053px) {
+        .about .about-container .pic-text-about {
+          flex-direction: column;
+          align-items: center; } }
+      .about .about-container .pic-text-about .pic-about {
+        flex: 1 1 0;
+        margin-left: 40px;
+        position: relative; }
+        .about .about-container .pic-text-about .pic-about img {
+          border: 8px white;
+          width: 400px;
+          height: 480px; }
+      .about .about-container .pic-text-about .text-about {
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 24px; }
+        .about .about-container .pic-text-about .text-about .text-title {
+          font-family: Inter;
+          font-size: 30px;
+          font-weight: 600;
+          line-height: 36px;
+          letter-spacing: -0.02em; }
+        .about .about-container .pic-text-about .text-about .text-p {
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left; }
+
+
 .navbar {
   font-family: "Inter";
   background-color: #FFF;
