@@ -58,3 +58,38 @@
           font-weight: 400;
           line-height: 24px;
           text-align: left; }
+
+
+.navbar {
+  font-family: "Inter";
+  background-color: #FFF;
+  display: flex;
+  align-items: center; }
+  .navbar .logo {
+    margin-right: 566px; }
+  .navbar a {
+    text-decoration: none;
+    color: #4B5563;
+    font-size: 16px;
+    font-weight: 500; }
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 24px; }
+  .navbar .separator {
+    border-left: 1px solid #F3F4F6;
+    height: 24px; }
+  .navbar .button {
+    background-color: #111827;
+    width: 136px;
+    height: 36px;
+    border-radius: 12px;
+    padding: 6px 16px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500; }
+  .navbar .icon-button {
+    display: flex;
+    gap: 16px; }
