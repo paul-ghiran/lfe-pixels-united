@@ -3,6 +3,18 @@
   margin: 0; }
 
 
+.footer {
+  line-height: 20px;
+  text-align: center;
+  font-family: inter;
+  font-size: 14px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #F9FAFB; }
+  .footer a {
+    color: black; }
+
+
 .contact {
   display: flex;
   justify-content: center;
@@ -300,5 +312,6 @@
   .navbar .icon-button {
     display: flex;
     gap: 16px; }
+
 
 

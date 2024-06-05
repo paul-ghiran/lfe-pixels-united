@@ -3,6 +3,23 @@
   margin: 0;
 }
 
+.footer{
+  line-height: 20px;
+  text-align: center;
+  font-family: inter;
+  font-size: 14px;
+  padding-top: 24px;
+  padding-bottom:24px;
+  background-color: #F9FAFB;
+ 
+  
+    a{
+      color:black;    
+    }
+   
+}
+
+
 
 .contact{
   display: flex;
@@ -186,12 +203,10 @@ color:rgba(17, 24, 39, 1);
         line-height: 28px;
         text-align: center;
         color: #4B5563;
-        
-
-
-      
+              
       }
     }
+  }
 
     .technologies{
       margin-top:44px ;
@@ -266,10 +281,7 @@ color:rgba(17, 24, 39, 1);
             height: 64px;
             
            
-          }
-         
-          
-         
+          }          
 
           p{
             font-family: "Inter", sans-serif;
@@ -406,3 +418,4 @@ $darkgray: #111827;
 
   }
 }
+
