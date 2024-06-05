@@ -3,6 +3,152 @@
   margin: 0;
 }
 
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+   .btn{
+    padding: 4px 20px ;
+    border-radius: 12px;
+    background-color: rgba(229, 231, 235, 1);
+    border:none;
+    color:rgba(75, 85, 99, 1);
+font-family: 'Inter';
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+text-align: left;
+ margin-bottom: 16px;
+   }
+   .p{
+    max-width: 576px;
+font-family:'Inter';
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+color:rgba(75, 85, 99, 1);
+padding-bottom: 48px;
+@media (max-width: 600px) {
+max-width: 343px;
+
+}
+
+   }
+   .email{
+    max-width:565px;
+    display: flex;
+    justify-content: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 18px;
+   .leter-email-icon{
+      max-width: 32px;
+      height: 32px;
+      @media (max-width: 600px) {
+        width: 24px;
+        height: 24px;
+      }
+      
+    }
+    span{ 
+font-family: 'Inter';
+font-size: 36px;
+font-weight: 600;
+line-height: 40px;
+letter-spacing: -0.02em;
+text-align: center;
+color:rgba(17, 24, 39, 1);
+margin-right:20px;
+margin-left:20px;
+@media (max-width: 600px) {
+  font-size: 18px;
+}
+
+    }
+    .copy-email-icon{
+      max-width: 44px;
+      height: 44px;
+      @media (max-width: 600px) {
+        width: 36px;
+height: 36px;
+      }
+      
+    }
+   }
+   .tel{
+    padding-bottom: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap:20px;
+    .copy-email-icon{
+      width: 44px;
+      height: 44px;
+      @media (max-width: 600px) {
+        width: 36px;
+height: 36px;
+      }
+
+    }
+    .tel-icon{
+      width: 32px;
+height: 32px;
+
+@media (max-width: 600px) {
+  width: 24px;
+  height: 24px;
+}
+
+    }
+    span{
+      
+font-family: 'Inter';
+font-size: 36px;
+font-weight: 600;
+line-height: 40px;
+letter-spacing: -0.02em;
+text-align: center;
+color:rgba(17, 24, 39, 1);
+@media (max-width: 600px) {
+  font-size: 18px;
+}
+    }
+   }
+   
+   .platform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding-bottom: 8px;
+      p{
+      font-family: 'Inter';
+      font-size: 16px;
+      font-weight: 400;
+      color:rgba(75, 85, 99, 1);
+      @media (max-width: 600px) {
+        max-width: 312px;
+      }
+         }
+         .icons{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          gap:6px;
+          img{
+            width:36px;
+      height:36px;
+          }
+         }
+     }
+}
 .skills{
   height: 560px;
  
