@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0; }
 
-
 .testimonials {
   background-color: #F9FAFB; }
   .testimonials .testimoniale {
@@ -45,8 +44,6 @@
         line-height: 20px;
         text-align: center; }
 
-
-
 .footer {
   line-height: 20px;
   text-align: center;
@@ -58,13 +55,13 @@
   .footer a {
     color: black; }
 
-
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: white; }
+  background-color: white;
+  padding: 96px 80px; }
   .contact .btn {
     padding: 4px 20px;
     border-radius: 12px;
@@ -80,13 +77,11 @@
   .contact .p {
     max-width: 576px;
     font-family: 'Inter';
-
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
     text-align: center;
     color: #4b5563;
-
     padding-bottom: 48px; }
     @media (max-width: 600px) {
       .contact .p {
@@ -209,64 +204,63 @@
         line-height: 28px;
         text-align: center;
         color: #4B5563; }
-    .skills .container .technologies {
-      margin-top: 44px;
+  .skills .technologies {
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px; }
+    .skills .technologies .upper {
       display: flex;
-      flex-direction: column;
-      gap: 48px; }
-      .skills .container .technologies .upper {
+      justify-content: space-between;
+      padding: 0; }
+      .skills .technologies .upper .tech {
+        height: 100px;
         display: flex;
-        justify-content: space-between;
-        padding: 0; }
-        .skills .container .technologies .upper .tech {
-          height: 100px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 8px; }
-          .skills .container .technologies .upper .tech:nth-child(5) img {
-            width: 56px; }
-          .skills .container .technologies .upper .tech img {
-            width: 64px;
-            height: 64px; }
-          .skills .container .technologies .upper .tech p {
-            font-family: "Inter", sans-serif;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 28px;
-            text-align: center;
-            margin-bottom: 0;
-            color: #4B5563; }
-      .skills .container .technologies .bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px; }
+        .skills .technologies .upper .tech:nth-child(5) img {
+          width: 56px; }
+        .skills .technologies .upper .tech img {
+          width: 64px;
+          height: 64px; }
+        .skills .technologies .upper .tech p {
+          font-family: "Inter", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          text-align: center;
+          margin-bottom: 0;
+          color: #4B5563; }
+    .skills .technologies .bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 0; }
+      .skills .technologies .bottom .tech {
+        height: 100px;
         display: flex;
-        justify-content: space-between;
-        padding: 0; }
-        .skills .container .technologies .bottom .tech {
-          height: 100px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 8px; }
-          .skills .container .technologies .bottom .tech:nth-child(2) img {
-            width: 30px; }
-          .skills .container .technologies .bottom .tech:nth-child(4) img {
-            width: 103px; }
-          .skills .container .technologies .bottom .tech:nth-child(5) img {
-            width: 43px; }
-          .skills .container .technologies .bottom .tech img {
-            width: 64px;
-            height: 64px; }
-          .skills .container .technologies .bottom .tech p {
-            font-family: "Inter", sans-serif;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 28px;
-            text-align: center;
-            margin-bottom: 0;
-            color: #4B5563; }
-
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px; }
+        .skills .technologies .bottom .tech:nth-child(2) img {
+          width: 30px; }
+        .skills .technologies .bottom .tech:nth-child(4) img {
+          width: 103px; }
+        .skills .technologies .bottom .tech:nth-child(5) img {
+          width: 43px; }
+        .skills .technologies .bottom .tech img {
+          width: 64px;
+          height: 64px; }
+        .skills .technologies .bottom .tech p {
+          font-family: "Inter", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          text-align: center;
+          margin-bottom: 0;
+          color: #4B5563; }
 
 .experience {
   background-color: #f9fafb; }
@@ -306,11 +300,11 @@
   .experience .summary p {
     font-family: "Inter", sans-serif;
     font-size: 20px;
-      font-weight: 400;
-      line-height: 28px;
-      text-align: center;
-      color: #4b5563;
-      margin-bottom: 48px; }
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #4b5563;
+    margin-bottom: 48px; }
   .experience .exp-data {
     width: 896px;
     height: 288px;
@@ -389,7 +383,6 @@
           line-height: 24px;
           text-align: left; }
 
-
 .navbar {
   font-family: "Inter";
   background-color: #FFF;
@@ -423,8 +416,3 @@
   .navbar .icon-button {
     display: flex;
     gap: 16px; }
-
-
-
-
-
