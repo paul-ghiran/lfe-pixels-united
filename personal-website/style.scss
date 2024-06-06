@@ -1,7 +1,16 @@
+
+
+$primaryfont: "Inter", sans-serif;
+$lightgray: #4B5563;
+$darkgray: #111827;
+
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
+
+
 
 
 .testimonials{
@@ -50,7 +59,7 @@
 
       p:first-of-type{
        
-        font-family: Inter;
+        font-family: $primaryfont;
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
@@ -60,7 +69,7 @@
 
       p:nth-of-type(2){
               
-        font-family: Inter;
+        font-family: $primaryfont;
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
@@ -79,7 +88,7 @@
 .footer{
   line-height: 20px;
   text-align: center;
-  font-family: inter;
+  font-family: $primaryfont;
   font-size: 14px;
   padding-top: 24px;
   padding-bottom:24px;
@@ -107,7 +116,7 @@
     background-color: rgba(229, 231, 235, 1);
     border:none;
     color:rgba(75, 85, 99, 1);
-font-family: 'Inter';
+font-family: $primaryfont;
 font-size: 14px;
 font-weight: 500;
 line-height: 20px;
@@ -116,7 +125,7 @@ text-align: left;
    }
    .p{
     max-width: 576px;
-font-family:'Inter';
+font-family: $primaryfont;
 font-size: 20px;
 font-weight: 400;
 line-height: 28px;
@@ -371,7 +380,7 @@ color:rgba(17, 24, 39, 1);
       }
     }
   }
-}
+
 
 
 .experience {
@@ -524,10 +533,6 @@ color:rgba(17, 24, 39, 1);
   }
 }
 
-$primaryfont: "Inter";
-$lightgray: #4B5563;
-$darkgray: #111827;
-
 
 .navbar{
   font-family: $primaryfont;
@@ -576,6 +581,93 @@ $darkgray: #111827;
 
   }
 }
+body {
+  font-family: "Inter", sans-serif;
+}
 
+.work-section {
+  margin: 96px 0;
 
+  img {
+    width: 100%;
+  }
 
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5563;
+  }
+
+  .work-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .secondary-heading {
+    // text-align: center;
+    font-size: 20px;
+    color: #4b5563;
+    font-weight: 400;
+    margin-bottom: 48px;
+  }
+}
+
+.badge {
+  padding: 4px 20px 4px 20px;
+  background-color: #e5e7eb;
+  border-radius: 12px;
+}
+
+.work-main-part {
+  display: flex;
+
+  .left-part,
+  .right-part {
+    padding: 48px;
+  }
+
+  .left-part {
+    background-color: #f9fafb;
+    box-shadow: 0px 4px 3px 0px #00000012;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-right: 1px #f3f4f6;
+    flex: 1;
+  }
+
+  .right-part {
+    box-shadow: 0px 4px 3px 0px #0000000f;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    gap: 24px;
+    border-bottom-right-radius: 12px;
+    flex: 1;
+
+    .interior-heading-work {
+      font-size: 20px;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .work-text {
+      font-weight: 400;
+      color: #4b5563;
+    }
+
+    .multiple-badge {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 8px;
+      column-gap: 8px;
+    }
+
+    .export-icon {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

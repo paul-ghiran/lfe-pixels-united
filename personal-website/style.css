@@ -1,7 +1,7 @@
 * {
   padding: 0;
-  margin: 0; }
-
+  margin: 0;
+  box-sizing: border-box; }
 
 .testimonials {
   background-color: #F9FAFB; }
@@ -33,24 +33,22 @@
         font-size: 20px;
         line-height: 28px; }
       .testimonials .testimoniale .chenar-testimonial p:first-of-type {
-        font-family: Inter;
+        font-family: "Inter", sans-serif;
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
         text-align: left; }
       .testimonials .testimoniale .chenar-testimonial p:nth-of-type(2) {
-        font-family: Inter;
+        font-family: "Inter", sans-serif;
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
         text-align: center; }
 
-
-
 .footer {
   line-height: 20px;
   text-align: center;
-  font-family: inter;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -58,20 +56,20 @@
   .footer a {
     color: black; }
 
-
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: white; }
+  background-color: white;
+  padding: 96px 80px; }
   .contact .btn {
     padding: 4px 20px;
     border-radius: 12px;
     background-color: #e5e7eb;
     border: none;
     color: #4b5563;
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -79,14 +77,12 @@
     margin-bottom: 16px; }
   .contact .p {
     max-width: 576px;
-    font-family: 'Inter';
-
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
     text-align: center;
     color: #4b5563;
-
     padding-bottom: 48px; }
     @media (max-width: 600px) {
       .contact .p {
@@ -209,64 +205,63 @@
         line-height: 28px;
         text-align: center;
         color: #4B5563; }
-    .skills .container .technologies {
-      margin-top: 44px;
+  .skills .technologies {
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px; }
+    .skills .technologies .upper {
       display: flex;
-      flex-direction: column;
-      gap: 48px; }
-      .skills .container .technologies .upper {
+      justify-content: space-between;
+      padding: 0; }
+      .skills .technologies .upper .tech {
+        height: 100px;
         display: flex;
-        justify-content: space-between;
-        padding: 0; }
-        .skills .container .technologies .upper .tech {
-          height: 100px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 8px; }
-          .skills .container .technologies .upper .tech:nth-child(5) img {
-            width: 56px; }
-          .skills .container .technologies .upper .tech img {
-            width: 64px;
-            height: 64px; }
-          .skills .container .technologies .upper .tech p {
-            font-family: "Inter", sans-serif;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 28px;
-            text-align: center;
-            margin-bottom: 0;
-            color: #4B5563; }
-      .skills .container .technologies .bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px; }
+        .skills .technologies .upper .tech:nth-child(5) img {
+          width: 56px; }
+        .skills .technologies .upper .tech img {
+          width: 64px;
+          height: 64px; }
+        .skills .technologies .upper .tech p {
+          font-family: "Inter", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          text-align: center;
+          margin-bottom: 0;
+          color: #4B5563; }
+    .skills .technologies .bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 0; }
+      .skills .technologies .bottom .tech {
+        height: 100px;
         display: flex;
-        justify-content: space-between;
-        padding: 0; }
-        .skills .container .technologies .bottom .tech {
-          height: 100px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 8px; }
-          .skills .container .technologies .bottom .tech:nth-child(2) img {
-            width: 30px; }
-          .skills .container .technologies .bottom .tech:nth-child(4) img {
-            width: 103px; }
-          .skills .container .technologies .bottom .tech:nth-child(5) img {
-            width: 43px; }
-          .skills .container .technologies .bottom .tech img {
-            width: 64px;
-            height: 64px; }
-          .skills .container .technologies .bottom .tech p {
-            font-family: "Inter", sans-serif;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 28px;
-            text-align: center;
-            margin-bottom: 0;
-            color: #4B5563; }
-
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px; }
+        .skills .technologies .bottom .tech:nth-child(2) img {
+          width: 30px; }
+        .skills .technologies .bottom .tech:nth-child(4) img {
+          width: 103px; }
+        .skills .technologies .bottom .tech:nth-child(5) img {
+          width: 43px; }
+        .skills .technologies .bottom .tech img {
+          width: 64px;
+          height: 64px; }
+        .skills .technologies .bottom .tech p {
+          font-family: "Inter", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          text-align: center;
+          margin-bottom: 0;
+          color: #4B5563; }
 
 .experience {
   background-color: #f9fafb; }
@@ -306,11 +301,11 @@
   .experience .summary p {
     font-family: "Inter", sans-serif;
     font-size: 20px;
-      font-weight: 400;
-      line-height: 28px;
-      text-align: center;
-      color: #4b5563;
-      margin-bottom: 48px; }
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #4b5563;
+    margin-bottom: 48px; }
   .experience .exp-data {
     width: 896px;
     height: 288px;
@@ -389,9 +384,8 @@
           line-height: 24px;
           text-align: left; }
 
-
 .navbar {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   background-color: #FFF;
   display: flex;
   align-items: center; }
@@ -424,7 +418,65 @@
     display: flex;
     gap: 16px; }
 
+body {
+  font-family: "Inter", sans-serif; }
 
+.work-section {
+  margin: 96px 0; }
+  .work-section img {
+    width: 100%; }
+  .work-section span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5563; }
+  .work-section .work-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center; }
+  .work-section .secondary-heading {
+    font-size: 20px;
+    color: #4b5563;
+    font-weight: 400;
+    margin-bottom: 48px; }
 
+.badge {
+  padding: 4px 20px 4px 20px;
+  background-color: #e5e7eb;
+  border-radius: 12px; }
 
-
+.work-main-part {
+  display: flex; }
+  .work-main-part .left-part,
+  .work-main-part .right-part {
+    padding: 48px; }
+  .work-main-part .left-part {
+    background-color: #f9fafb;
+    box-shadow: 0px 4px 3px 0px #00000012;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-right: 1px #f3f4f6;
+    flex: 1; }
+  .work-main-part .right-part {
+    box-shadow: 0px 4px 3px 0px #0000000f;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-bottom-right-radius: 12px;
+    flex: 1; }
+    .work-main-part .right-part .interior-heading-work {
+      font-size: 20px;
+      font-weight: 600;
+      color: #111827; }
+    .work-main-part .right-part .work-text {
+      font-weight: 400;
+      color: #4b5563; }
+    .work-main-part .right-part .multiple-badge {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 8px;
+      column-gap: 8px; }
+    .work-main-part .right-part .export-icon {
+      width: 36px;
+      height: 36px; }
