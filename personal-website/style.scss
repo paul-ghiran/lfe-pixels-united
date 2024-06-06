@@ -657,10 +657,14 @@ body {
   padding: 4px 20px 4px 20px;
   background-color: #e5e7eb;
   border-radius: 12px;
+  margin-right: 4px;
+  line-height: 20px;
+  margin-bottom: 8px;
 }
 
 .work-main-part {
   display: flex;
+  max-width: 1152px;
 
   .left-part,
   .right-part {
@@ -697,10 +701,7 @@ body {
     }
 
     .multiple-badge {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      row-gap: 8px;
-      column-gap: 8px;
+      display: block;
     }
 
     .export-icon {

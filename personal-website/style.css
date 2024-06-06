@@ -444,10 +444,14 @@ body {
 .badge {
   padding: 4px 20px 4px 20px;
   background-color: #e5e7eb;
-  border-radius: 12px; }
+  border-radius: 12px;
+  margin-right: 4px;
+  line-height: 20px;
+  margin-bottom: 8px; }
 
 .work-main-part {
-  display: flex; }
+  display: flex;
+  max-width: 1152px; }
   .work-main-part .left-part,
   .work-main-part .right-part {
     padding: 48px; }
@@ -473,10 +477,7 @@ body {
       font-weight: 400;
       color: #4b5563; }
     .work-main-part .right-part .multiple-badge {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      row-gap: 8px;
-      column-gap: 8px; }
+      display: block; }
     .work-main-part .right-part .export-icon {
       width: 36px;
       height: 36px; }
