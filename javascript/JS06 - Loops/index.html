@@ -1,0 +1,209 @@
+<script>
+    // Dorim sa stim de cate ori putem face plinul rezervorului masinii, in conditia in care ne costa 200 de lei un plin, si dispunem de 900 de lei.
+    // De fiecare data cand facem un plin, vom scrie in consola "Am facut plinul" si suma ramasa de bani.
+
+    /* 
+    LIMBAJ NATURAL 
+    
+    bugetul este de 900 de lei
+    
+    cat timp am mai mult de 200 de lei
+        fac plinul
+        anunt lumea ca am facut plinul
+        scad banii din buget 
+        tin minte inca odata, numarand de fapt cate plinuri am facut
+    */
+    buget = 100;
+    plinuriFacute = 0;
+
+    while (buget > 200) {
+        console.log("Am facut plinul");
+        buget = buget - 200;
+        console.log("Bani ramasi:" + buget);
+        plinuriFacute = plinuriFacute + 1;
+    }
+
+    // AFISAM CIFRELE UNUI NR, IN ORDINE INVERSA
+    console.log("~~~~~~~~~~CIFRELE UNUI NR~~~~~~~~~~")
+    var numar = 2738;
+
+    while (numar > 0) {
+        rest = numar % 10;
+        console.log(rest);
+
+        numarFaraUltimaCifra = numar / 10; //273.8 prima data
+        numarFaraUltimaCifra = numarFaraUltimaCifra - (numarFaraUltimaCifra % 1) //273.8 - 0.8 
+
+        numar = numarFaraUltimaCifra;
+
+    }
+
+
+    // AFISAM CIFRELE UNUI NR, FOLOSIND STRING
+    console.log("~~~~~~~~~~CIFRELE UNUI NR FOLOSIND STRING~~~~~~~~~~")
+    var numar = 2738;
+    var numarString = 2738 + '';
+
+    var lungimeNumar = numarString.length;
+
+    for (i = 0; i < lungimeNumar; i++) {
+        console.log(numarString[i]);
+    }
+
+    // Nr de cifre si suma cifrelor
+    console.log("~~~~~~~~~~NR CIFRE, SUMA CIFRE, while~~~~~~~~~~")
+
+    var numar = 2738;
+    var sumaDePanaAcum = 0;
+    var numarDeCifre = 0;
+
+
+    while (numar > 0) {
+        rest = numar % 10; // Ultima cifra
+        console.log(rest);
+        sumaDePanaAcum = sumaDePanaAcum + rest;
+        numarDeCifre = numarDeCifre + 1;
+
+        numarFaraUltimaCifra = numar / 10; //273.8 prima data
+        numarFaraUltimaCifra = numarFaraUltimaCifra - (numarFaraUltimaCifra % 1) //273.8 - 0.8 
+
+        numar = numarFaraUltimaCifra;
+    }
+
+    console.log("Suma: " + sumaDePanaAcum);
+    console.log("Nr De Cifre: " + numarDeCifre);
+
+    // Nr de cifre si suma cifrelor string
+    console.log("~~~~~~~~~~NR CIFRE, SUMA CIFRE, STRING~~~~~~~~~~")
+
+    var numar = 2738;
+    var numarString = 2738 + '';
+
+    var sumaDePanaAcum = 0;
+    var nrDeCifre = 0;
+
+    var lungimeNumar = numarString.length;
+
+    for (i = 0; i < lungimeNumar; i++) {
+        sumaDePanaAcum = sumaDePanaAcum + +numarString[i];
+        nrDeCifre = nrDeCifre + 1;
+        console.log(numarString[i]);
+    }
+    console.log("Suma:" + sumaDePanaAcum);
+    console.log("nrDeCifre:" + nrDeCifre);
+    console.log("lungimea numarului:" + lungimeNumar);
+
+    // Nr de cifre si suma cifrelor string
+    console.log("~~~~~~~~~~NR CIFRE, SUMA CIFRE, STRING~~~~~~~~~~")
+    console.log("~~~~~~~~~~aici este exemplul explicativ~~~~~~~~~~")
+
+    var numar = 2738;
+    var numarString = 2738 + '';
+
+    var sumaDePanaAcum = 0;
+    var nrDeCifre = 0;
+
+    var lungimeNumar = numarString.length;
+
+    for (i = 0; i < lungimeNumar; i++) {
+        console.log("~~~~~~~~~~~~~~FOR INCEPE AICI ~~~~~~~~~");
+        sumaDePanaAcum = sumaDePanaAcum + +numarString[i];
+
+        console.log("daca i este " + i + " atunci numarString[i] este " + numarString[i])
+        console.log("daca i este " + i + " atunci sumaDePanaAcum este " + sumaDePanaAcum)
+        nrDeCifre = nrDeCifre + 1;
+        console.log(numarString[i]);
+    }
+    console.log("Suma:" + sumaDePanaAcum);
+    console.log("nrDeCifre:" + nrDeCifre);
+    console.log("lungimea numarului:" + lungimeNumar);
+
+
+    // Transformare cifre in zilele saptamanii
+    console.log("~~~~~~~~~~CIFRE => ZILE cu If ~~~~~~~~~~")
+
+    const stringCifreZile = '1251';
+    const lungimeString = stringCifreZile.length;
+
+    for (i = 0; i < lungimeString; i++) {
+        const pozitiaCurenta = i;
+        const caracterulDePePozitiaCurenta = stringCifreZile[pozitiaCurenta];
+        // asta inseamna caracterul de pe pozitia egala cu 'pozitiaCurenta' din stringul stringCifreZile
+
+        if (caracterulDePePozitiaCurenta == '1') {
+            console.log('Luni');
+        } else if (caracterulDePePozitiaCurenta == '2') {
+            console.log('Marti');
+        } else if (caracterulDePePozitiaCurenta == '3') {
+            console.log('Miercuri');
+        } else if (caracterulDePePozitiaCurenta == '4') {
+            console.log('Joi');
+        } else if (caracterulDePePozitiaCurenta == '5') {
+            console.log('Vineri');
+        } else if (caracterulDePePozitiaCurenta == '6') {
+            console.log('Sambata');
+        } else if (caracterulDePePozitiaCurenta == '7') {
+            console.log('Duminica');
+        }
+
+    }
+
+    const stringCifreZileSwitch = '1251';
+    const lungimeStringSwitch = stringCifreZileSwitch.length;
+
+    for (i = 0; i < lungimeStringSwitch; i++) {
+        const pozitiaCurenta = i;
+        const caracterulDePePozitiaCurenta = stringCifreZileSwitch[pozitiaCurenta];
+        // asta inseamna caracterul de pe pozitia egala cu 'pozitiaCurenta' din stringul stringCifreZile
+
+        switch (caracterulDePePozitiaCurenta) {
+            case '1':
+                console.log('Luni');
+                break;
+            case '2':
+                console.log('Marti');
+                break;
+            case '3':
+                console.log('Miercuri');
+                break;
+            case '4':
+                console.log('Joi');
+                break;
+            case '5':
+                console.log('Vineri');
+                break;
+            case '6':
+                console.log('Sambata');
+                break;
+            case '7':
+                console.log('Duminica');
+                break;
+        }
+
+    }
+
+    // Afisati suma numerelor divizibile cu 7 pana la 100
+    console.log("~~~~~~~~~~Suma divizibile cu 7 ~~~~~~~~~~")
+
+
+    /*
+    sumaDePanaAcum va fi initial 0;
+    
+    Pentru fiecare numar de la 1 la 100
+        daca numarul este divizibil cu 7
+            il adaug la suma de pana acum
+    
+    */
+
+    sumaDePanaAcum = 0;
+
+    for (i = 1; i <= 100; i++) {
+        numarulCurent = i;
+        if (numarulCurent % 7 == 0) {
+            sumaDePanaAcum = sumaDePanaAcum + numarulCurent;
+        }
+    }
+
+    console.log("Suma totala:", sumaDePanaAcum)
+
+</script>
