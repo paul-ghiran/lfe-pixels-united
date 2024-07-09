@@ -33,6 +33,25 @@ console.log(filtareImpare(arrayEx));
 
 
  // EX 3
+ // se da un array si o var , returnati t sau f daca variabila specif. se gaseste in array
+ let array = ['acesta','este','un','array'];
+ let cuvantCautat ='acesta';
+ function cautaInArray (array, cuvantCautat){
+  let count = 0;
+  for (let i=0; i< array.length; i++) {
+    if(cuvantCautat===array[i]) {
+     count+=1;
+     if (count>0){
+      return "Este adevarat";
+     }
+    }
+    
+
+  }
+
+ }
+
+ console.log (cautaInArray(array, cuvantCautat));
 
 
  // EX 4 
