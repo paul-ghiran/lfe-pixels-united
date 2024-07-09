@@ -118,7 +118,7 @@ for (i = 0; i < lungimeCos2; i++) {
     const pretulProdusului = determinaPretulProdusului(tipulProdusului);
 
     totalCos2 = totalCos2 + pretulProdusului;
-    console.log(`${produs} este ${tipulProdusului} si costa ${pretulProdusului} pentru un total intermediar de ${totalCos}`);
+    console.log(`${produs} este ${tipulProdusului} si costa ${pretulProdusului} pentru un total intermediar de ${totalCos2}`);
 }
 
 console.log('PRETUL COSULUI ESTE', totalCos2);
@@ -178,3 +178,10 @@ thirdBasket.forEach(adaugaProdusLaTotal);
 console.log("FOR BASKET Three", totalCos3);
 
 cos_exemplu.forEach(adaugaProdusLaTotal)
+
+const myArray = [12, 45, 23, 95];
+
+for (i = 0; i < myArray.length; i++) {
+    const elementulCurent = myArray[i];
+    console.log("Elementul de pe pozitia " + i + " este " + elementulCurent);
+}
