@@ -637,6 +637,43 @@ $darkgray: #111827;
   }
 }
 
+.about.dark-mode {
+  background-color: #111827;
+  .about-container {
+    .tag-about {
+      background-color: #374151;
+      color: #D1D5DB;
+    }
+
+    .pic-text-about {
+      height: auto;
+      .pic-about {
+        
+        .pic-about-wrapper {
+          .pic-top {
+            border: 8px solid #111827;
+          }
+        }
+      }
+
+      .text-about {
+
+        .text-title {
+          color: #F9FAFB;
+        }
+
+        .text-p {
+          color: #D1D5DB;
+          .small-display {
+            @media (min-width: 1053px) {
+              display:block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 .navbar {
   font-family: $primaryfont;

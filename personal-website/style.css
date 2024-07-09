@@ -446,6 +446,23 @@
               gap: 10px;
               list-style-position: inside; }
 
+.about.dark-mode {
+  background-color: #111827; }
+  .about.dark-mode .about-container .tag-about {
+    background-color: #374151;
+    color: #D1D5DB; }
+  .about.dark-mode .about-container .pic-text-about {
+    height: auto; }
+    .about.dark-mode .about-container .pic-text-about .pic-about .pic-about-wrapper .pic-top {
+      border: 8px solid #111827; }
+    .about.dark-mode .about-container .pic-text-about .text-about .text-title {
+      color: #F9FAFB; }
+    .about.dark-mode .about-container .pic-text-about .text-about .text-p {
+      color: #D1D5DB; }
+      @media (min-width: 1053px) {
+        .about.dark-mode .about-container .pic-text-about .text-about .text-p .small-display {
+          display: block; } }
+
 .navbar {
   font-family: "Inter", sans-serif;
   background-color: #FFF;
