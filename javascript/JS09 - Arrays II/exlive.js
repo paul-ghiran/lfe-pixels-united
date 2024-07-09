@@ -11,3 +11,14 @@ function numerepare(arr){
     return suma;
 }
  console.log(numerepare(array1));
+
+ // EX 3
+
+
+ // EX 4 
+
+
+ // EX 5
+
+
+ // EX 6
