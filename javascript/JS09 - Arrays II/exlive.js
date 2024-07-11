@@ -62,5 +62,24 @@ let arrrayNr = [2, 4, 5, 6, 7, 8];
 
 console.log(inmulitireArray(arrrayNr));
 // EX 5
-
+let arr1=[1,2,3,4,5,6,7,8,10,11,12];
+function nrpare(arrayDeVerificat){
+  for(i=0;i<arrayDeVerificat.length;i++){
+    if(verificanrPar(arrayDeVerificat[i])==false){
+      return false;
+    }
+   
+  }
+  return true; 
+}
+console.log(nrpare(arr1));
+console.log(nrpare([2,4,6]));
+function verificanrPar(numar){
+  if(numar%2==0){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log(verificanrPar(11));
 // EX 6
