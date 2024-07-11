@@ -31,33 +31,36 @@ function filtareImpare(array) {
 
 console.log(filtareImpare(arrayEx));
 
-
- // EX 3
- // se da un array si o var , returnati t sau f daca variabila specif. se gaseste in array
- let array = ['acesta','este','un','array'];
- let cuvantCautat ='acesta';
- function cautaInArray (array, cuvantCautat){
+// EX 3
+// se da un array si o var , returnati t sau f daca variabila specif. se gaseste in array
+let array = ["acesta", "este", "un", "array"];
+let cuvantCautat = "acesta";
+function cautaInArray(array, cuvantCautat) {
   let count = 0;
-  for (let i=0; i< array.length; i++) {
-    if(cuvantCautat===array[i]) {
-     count+=1;
-     if (count>0){
-      return "Este adevarat";
-     }
+  for (let i = 0; i < array.length; i++) {
+    if (cuvantCautat === array[i]) {
+      count += 1;
+      if (count > 0) {
+        return "Este adevarat";
+      }
     }
-    
-
   }
+}
 
- }
+console.log(cautaInArray(array, cuvantCautat));
 
- console.log (cautaInArray(array, cuvantCautat));
+// EX 4
 
+function inmulitireArray(str) {
+  let x = [];
+  for (let i = 0; i < str.length; i++) {
+    x.push(str[i] ** 2);
+  }
+  return x;
+}
+let arrrayNr = [2, 4, 5, 6, 7, 8];
 
- // EX 4 
+console.log(inmulitireArray(arrrayNr));
+// EX 5
 
-
- // EX 5
-
-
- // EX 6
+// EX 6
