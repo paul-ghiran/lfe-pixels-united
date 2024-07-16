@@ -14,6 +14,7 @@ function numerepare(arr) {
 console.log(numerepare(array1));
 
 // Ex 2
+// Sa se gaseasca numerele impare dintr-un array
 
 const arrayEx = [1, 2];
 arrayEx.push(4, 5);

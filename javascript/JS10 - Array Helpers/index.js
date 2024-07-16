@@ -89,6 +89,7 @@ for (var i = 0; i < array2.length; i++) {
     printeazaDacaNumarulEstePar(array2[i])
 }
 
+
 // Map 
 // For each element of an array, we map the result of a function into a new array
 // INPUT: O functie
@@ -180,7 +181,7 @@ console.log("copieArray arrayexemplu este", copieArray)
 const arrayEx1Slice = [1, 3, 6, 4, 12, 8, 9, 10, 150];
 const pozitiaLui12 = arrayEx1Slice.indexOf(12)
 
-const sliceUlPanaLa12 = arrayEx1Slice.slice(0, pozitiaLui12 + 1)
+const sliceUlPanaLa12 = arrayEx1Slice.slice(0, pozitiaLui12)
 console.log("Slice-ul pana la 12", sliceUlPanaLa12)
 // Cerinta: Se doreste copierea elementor dintr-un array de la identificarea lui 12;
 const sliceUlDupa12 = arrayEx1Slice.slice(pozitiaLui12 + 1, pozitiaLui12 + 4)
