@@ -27,7 +27,20 @@ const volkswagenPassat = {
   cantitate: 5,
 };
 
+inventar.push(volkswagenPassat);
+
+
 // Part 4
+
+const volkswagenGolf ={
+    pret: 25000,
+    caiPutere: (volkswagenJetta.caiPutere + volkswagenPolo.caiPutere) / 2,
+    caroserie: "hatchback",
+    cantitate: 10,
+};
+
+inventar.push(volkswagenGolf);
+
 
 // Part 5
 
