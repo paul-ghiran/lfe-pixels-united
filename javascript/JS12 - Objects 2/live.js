@@ -29,40 +29,30 @@ const volkswagenPassat = {
 
 inventar.push(volkswagenPassat);
 
-
 // Part 4
 
-const volkswagenGolf ={
-    pret: 25000,
-    caiPutere: (volkswagenJetta.caiPutere + volkswagenPolo.caiPutere) / 2,
-    caroserie: "hatchback",
-    cantitate: 10,
+const volkswagenGolf = {
+  pret: 25000,
+  caiPutere: (volkswagenJetta.caiPutere + volkswagenPolo.caiPutere) / 2,
+  caroserie: "hatchback",
+  cantitate: 10,
 };
 
 inventar.push(volkswagenGolf);
 
-
 // Part 5
-const modele=['Jetta','Polo','Passat','Golf'];
+const modele = ["Jetta", "Polo", "Passat", "Golf"];
 
-function adaugaModel(){
-  for(let i=0;i<inventar.length;i++){
-    inventar[i].model=modele[i]
+function adaugaModel() {
+  for (let i = 0; i < inventar.length; i++) {
+    inventar[i].model = modele[i];
   }
 }
 
 adaugaModel();
 
-
-// Part 6
-
-// Part 7
-
-// Part 8
-
-// Part 9
-
-console.log( JSON.stringify (inventar) );
+// Sfarsit setup 
+console.log(JSON.stringify(inventar));
 
 function seteazaCantitate(array) {
   for (let i = 0; i < array.length; i++) {
@@ -73,3 +63,43 @@ function seteazaCantitate(array) {
 }
 
 console.log(seteazaCantitate(inventar));
+
+// Inceput ex live
+
+// Team 0, ex 1:
+// Creati o variabila care va memora vanzarile dealership-ulu
+// Creati o functie care "CUMPARA" o masina, adica ii scade cantitatea si ne creste noua vanzarile, in functie de modelul acesteia (string, ex 'Polo' )
+
+var vanzariTotale = 0;
+
+function cumparaMasina(modelMasina) {
+  const modelulGasit = inventar.find(function (masinaDinInventar) {
+    return masinaDinInventar.model == modelMasina;
+  });
+
+  modelulGasit.cantitate = modelulGasit.cantitate - 1;
+  vanzariTotale += modelulGasit.pret;
+
+  console.log(
+    "S-a cumparat un ",
+    modelMasina,
+    ", vanzarile totale ajungand la",
+    vanzariTotale
+  );
+}
+
+cumparaMasina("Polo");
+cumparaMasina("Polo");
+
+// Team 1, ex 1
+
+// Team 1, ex 2
+
+// Team 2, ex 1
+
+// Team 2, ex 2
+
+
+// Sfarsit fisier
+console.log("VANZARILE TOTALE SUNT", vanzariTotale);
+console.log(inventar)
