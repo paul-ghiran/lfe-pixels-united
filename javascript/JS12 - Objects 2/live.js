@@ -39,7 +39,7 @@ const volkswagenPassat = {
 
 // Part 9
 
-console.log(inventar);
+console.log( JSON.stringify (inventar) );
 
 function seteazaCantitate(array) {
   for (let i = 0; i < array.length; i++) {
