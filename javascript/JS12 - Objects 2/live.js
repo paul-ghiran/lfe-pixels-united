@@ -12,8 +12,13 @@ inventar.push(volkswagenJetta);
 
 
 // Part 2 Maria
-
-
+const volkswagenPolo={
+    pret: 20000,
+    caiPutere: 85,
+    caroserie: 'hatchback'
+};
+volkswagenPolo.cantitate=10;
+inventar.push(volkswagenPolo);
 
 // Part 3 Eric
 
