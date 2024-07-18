@@ -88,6 +88,24 @@ cumparaMasina("Polo");
 
 // Team 1, ex 1
 
+function gasireMasina (modelMasina) {
+  for (i=0; i< inventar.length; i++){
+    if (inventar[i].model==modelMasina) {
+      return inventar[i];
+    }
+  }
+      
+}
+
+// Team 1, ex 2
+
+function reseteazaCantitati () {
+  for (i=0; i< inventar.length; i++) {
+    inventar[i].cantitate = inventar[i].cantitateInitiala; 
+  }
+}
+
+
 // Team 1, ex 2
 
 // Team 2, ex 1
