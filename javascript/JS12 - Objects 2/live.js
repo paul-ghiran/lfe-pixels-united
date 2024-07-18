@@ -43,6 +43,16 @@ inventar.push(volkswagenGolf);
 
 
 // Part 5
+const modele=['Jetta','Polo','Passat','Golf'];
+
+function adaugaModel(){
+  for(let i=0;i<inventar.length;i++){
+    inventar[i].model=modele[i]
+  }
+}
+
+adaugaModel();
+
 
 // Part 6
 
