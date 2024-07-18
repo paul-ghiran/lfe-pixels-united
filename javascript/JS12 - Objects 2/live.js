@@ -51,7 +51,7 @@ function adaugaModel() {
 
 adaugaModel();
 
-// Sfarsit setup 
+// Sfarsit setup
 console.log(JSON.stringify(inventar));
 
 function seteazaCantitate(array) {
@@ -80,12 +80,7 @@ function cumparaMasina(modelMasina) {
   modelulGasit.cantitate = modelulGasit.cantitate - 1;
   vanzariTotale += modelulGasit.pret;
 
-  console.log(
-    "S-a cumparat un ",
-    modelMasina,
-    ", vanzarile totale ajungand la",
-    vanzariTotale
-  );
+  console.log("S-a cumparat un ", modelMasina, ", vanzarile totale ajungand la", vanzariTotale);
 }
 
 cumparaMasina("Polo");
@@ -96,10 +91,31 @@ cumparaMasina("Polo");
 // Team 1, ex 2
 
 // Team 2, ex 1
+function totalProduse(categorie) {
+  let total = 0;
+  for (let i = 0; i < inventar.length; i++) {
+    if (inventar[i].caroserie === categorie) {
+      total += inventar[i].cantitate;
+    }
+  }
+  return total;
+}
+
+console.log(totalProduse("hatchback"));
 
 // Team 2, ex 2
-
+function afisareMasiniCumaprate(model, inventar) {
+  const modelGasit = inventar.find(function (masinaDinInventar) {
+    return masinaDinInventar.model === model;
+  });
+  if (modelGasit) {
+    console.log("Model gasit", modelGasit);
+    counter = modelGasit.cantitateInitiala - modelGasit.cantitate;
+    return counter;
+  }
+}
+console.log(afisareMasiniCumaprate("Polo", inventar));
 
 // Sfarsit fisier
 console.log("VANZARILE TOTALE SUNT", vanzariTotale);
-console.log(inventar)
+console.log(inventar);
