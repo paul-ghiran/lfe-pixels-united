@@ -1,5 +1,14 @@
-// Part 1
+// Part 1 Ne imaginam un dealership auto 
+const inventar = [];
 
+const volkswagenJetta = {
+    pret: 30000,
+    caiPutere: 140,
+    caroserie: 'sedan',
+    cantitate: 10
+};
+
+inventar.push(volkswagenJetta);
 
 
 // Part 2
