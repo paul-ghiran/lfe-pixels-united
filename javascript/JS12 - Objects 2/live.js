@@ -11,11 +11,11 @@ const volkswagenJetta = {
 inventar.push(volkswagenJetta);
 
 
-// Part 2
+// Part 2 Maria
 
 
 
-// Part 3
+// Part 3 Eric
 
 
 
