@@ -1,184 +1,195 @@
- // Part 1 Ne imaginam un dealership auto
- const inventar = [];
+// Part 1 Ne imaginam un dealership auto
+const inventar = [];
 
- const volkswagenJetta = {
-   pret: 30000,
-   caiPutere: 140,
-   caroserie: "sedan",
-   cantitate: 10,
- };
+const volkswagenJetta = {
+  pret: 30000,
+  caiPutere: 140,
+  caroserie: "sedan",
+  cantitate: 10,
+};
 
- inventar.push(volkswagenJetta);
+inventar.push(volkswagenJetta);
 
- // Part 2 Maria
- const volkswagenPolo = {
-   pret: 20000,
-   caiPutere: 85,
-   caroserie: "hatchback",
- };
- volkswagenPolo.cantitate = 10;
- inventar.push(volkswagenPolo);
+// Part 2 Maria
+const volkswagenPolo = {
+  pret: 20000,
+  caiPutere: 85,
+  caroserie: "hatchback",
+};
+volkswagenPolo.cantitate = 10;
+inventar.push(volkswagenPolo);
 
- // Part 3 Eric
- const volkswagenPassat = {
-   pret: 40000,
-   caiPutere: 170,
-   caroserie: "sedan",
-   cantitate: 5,
- };
+// Part 3 Eric
+const volkswagenPassat = {
+  pret: 40000,
+  caiPutere: 170,
+  caroserie: "sedan",
+  cantitate: 5,
+};
 
- inventar.push(volkswagenPassat);
+inventar.push(volkswagenPassat);
 
- // Part 4
+// Part 4
 
- const volkswagenGolf = {
-   pret: 25000,
-   caiPutere: (volkswagenJetta.caiPutere + volkswagenPolo.caiPutere) / 2,
-   caroserie: "hatchback",
-   cantitate: 10,
- };
+const volkswagenGolf = {
+  pret: 25000,
+  caiPutere: (volkswagenJetta.caiPutere + volkswagenPolo.caiPutere) / 2,
+  caroserie: "hatchback",
+  cantitate: 10,
+  model: "Golf",
+};
 
- inventar.push(volkswagenGolf);
+inventar.push(volkswagenGolf);
 
- // Part 5
- const modele = ["Jetta", "Polo", "Passat", "Golf"];
+// Part 5
+const modele = ["Jetta", "Polo", "Passat", "Golf"];
 
- function adaugaModel() {
-   for (let i = 0; i < inventar.length; i++) {
-     inventar[i].model = modele[i];
-   }
- }
+function adaugaModel() {
+  for (let i = 0; i < inventar.length; i++) {
+    inventar[i].model = modele[i];
+  }
+}
 
- adaugaModel();
+adaugaModel();
 
- // Sfarsit setup
- console.log(JSON.stringify(inventar));
+// Sfarsit setup
+console.log(JSON.stringify(inventar));
 
- function seteazaCantitate(array) {
-   for (let i = 0; i < array.length; i++) {
-     const produsCurrent = array[i];
-     produsCurrent.cantitateInitiala = produsCurrent.cantitate;
-   }
-   return array;
- }
+function seteazaCantitate(array) {
+  for (let i = 0; i < array.length; i++) {
+    const produsCurrent = array[i];
+    produsCurrent.cantitateInitiala = produsCurrent.cantitate;
+  }
+  return array;
+}
 
- console.log(seteazaCantitate(inventar));
+console.log(seteazaCantitate(inventar));
 
- // Inceput ex live
+// Setati un pret de achizitie de 80% din valoare fiecarei masini din inventar
 
- // Team 0, ex 1:
- // Creati o variabila care va memora vanzarile dealership-ulu
- // Creati o functie care "CUMPARA" o masina, adica ii scade cantitatea si ne creste noua vanzarile, in functie de modelul acesteia (string, ex 'Polo' )
+function seteazaPretAchizieLaTotInventarul(array) {
+  array.forEach(seteazaPretAchizitieUnSingurModel);
+}
 
- var vanzariTotale = 0;
+function seteazaPretAchizitieUnSingurModel(obiectMasina) {
+  obiectMasina.pretAchizitie = obiectMasina.pret * 0.8;
+}
 
- function cumparaMasina(modelMasina) {
-   const modelulGasit = inventar.find(function (masinaDinInventar) {
-     return masinaDinInventar.model == modelMasina;
-   });
+seteazaPretAchizieLaTotInventarul(inventar);
 
-   modelulGasit.cantitate = modelulGasit.cantitate - 1;
-   vanzariTotale += modelulGasit.pret;
+// Inceput ex live
 
-   console.log(
-     "S-a cumparat un ",
-     modelMasina,
-     ", vanzarile totale ajungand la",
-     vanzariTotale
-   );
- }
+// Team 0, ex 1:
+// Creati o variabila care va memora vanzarile dealership-ului
+// Creati o functie care "CUMPARA" o masina, adica ii scade cantitatea si ne creste noua vanzarile, in functie de modelul acesteia (string, ex 'Polo' )
 
- cumparaMasina("Polo");
- cumparaMasina("Polo");
+var vanzariTotale = 0;
 
- // Team 1, ex 1
+function cumparaMasina(modelMasina) {
+  const modelulGasit = inventar.find(function (masinaDinInventar) {
+    return masinaDinInventar.model == modelMasina;
+  });
 
- function gasireMasina(modelMasina) {
-   for (i = 0; i < inventar.length; i++) {
-     if (inventar[i].model == modelMasina) {
-       return inventar[i];
-     }
-   }
- }
+  modelulGasit.cantitate = modelulGasit.cantitate - 1;
+  vanzariTotale += modelulGasit.pret;
 
- // Team 1, ex 2
+  console.log(
+    "S-a cumparat un ",
+    modelMasina,
+    ", vanzarile totale ajungand la",
+    vanzariTotale
+  );
+}
 
- function reseteazaCantitati() {
-   for (i = 0; i < inventar.length; i++) {
-     inventar[i].cantitate = inventar[i].cantitateInitiala;
-   }
- }
+cumparaMasina("Polo");
+cumparaMasina("Polo");
 
- // Team 1, totalul valorii masinilor vandute dintr-un anumit tip
+// Team 1, ex 1
 
- function totalVanzariPerModel(modelMasina) {
-   const modelDorit = gasireMasina(modelMasina);
+function gasireMasina(modelMasina) {
+  for (i = 0; i < inventar.length; i++) {
+    if (inventar[i].model == modelMasina) {
+      return inventar[i];
+    }
+  }
+}
 
-   return afisareMasiniCumaprate(modelMasina) * modelDorit.pret;
- }
+// Team 1, ex 2
 
- console.log("TOTAL $ POLO", totalVanzariPerModel("Polo"));
- // Team 2, ex 1
- function totalProduse(categorie) {
-   let total = 0;
-   for (let i = 0; i < inventar.length; i++) {
-     if (inventar[i].caroserie === categorie) {
-       total += inventar[i].cantitate;
-     }
-   }
-   return total;
- }
+function reseteazaCantitati() {
+  for (i = 0; i < inventar.length; i++) {
+    inventar[i].cantitate = inventar[i].cantitateInitiala;
+  }
+}
 
- console.log(totalProduse("hatchback"));
+// Team 1, totalul valorii masinilor vandute dintr-un anumit tip
 
- // Team 2, ex 2
- function afisareMasiniCumaprate(model) {
-   const modelGasit = inventar.find(function (masinaDinInventar) {
-     return masinaDinInventar.model === model;
-   });
-   if (modelGasit) {
-     console.log("Model gasit", modelGasit);
-     counter = modelGasit.cantitateInitiala - modelGasit.cantitate;
-     return counter;
-   }
- }
- console.log(afisareMasiniCumaprate("Polo"));
+function totalVanzariPerModel(modelMasina) {
+  const modelDorit = gasireMasina(modelMasina);
 
- function masiniVandutePerCategorie() {
-   const rezultatFinal = {
-     hatchback: 0,
-     sedan: 0,
-   };
+  return afisareMasiniCumaprate(modelMasina) * modelDorit.pret;
+}
 
-   for (var i = 0; i < modele.length; i++) {
-     const modelulCurent = modele[i];
-     const obiectMasina = gasireMasina(modelulCurent);
+console.log("TOTAL $ POLO", totalVanzariPerModel("Polo"));
+// Team 2, ex 1
+function totalProduse(categorie) {
+  let total = 0;
+  for (let i = 0; i < inventar.length; i++) {
+    if (inventar[i].caroserie === categorie) {
+      total += inventar[i].cantitate;
+    }
+  }
+  return total;
+}
 
-     const masiniVanduteModelCurent =
-       afisareMasiniCumaprate(modelulCurent); // Aka cate s-au cumparat, polo, passsat etc
+console.log(totalProduse("hatchback"));
 
-     rezultatFinal[obiectMasina.caroserie] += masiniVanduteModelCurent;
-     //  SINONIM LINIE MAI SUS:
-     // if ( obiectMasina.caroserie == 'hatchback') {
-     //     rezultatFinal.hatchback += masiniVanduteModelCurent;
-     // } else {
-     //     rezultatFinal.sedan += masiniVanduteModelCurent;
-     // }
-   }
+// Team 2, ex 2
+function afisareMasiniCumaprate(model) {
+  const modelGasit = gasireMasina(model);
 
-   return rezultatFinal;
- }
+  if (modelGasit) {
+    console.log("Model gasit", modelGasit);
+    counter = modelGasit.cantitateInitiala - modelGasit.cantitate;
+    return counter;
+  }
+}
+console.log(afisareMasiniCumaprate("Polo"));
 
- console.log("Vandute per categorie", masiniVandutePerCategorie());
+function masiniVandutePerCategorie() {
+  const rezultatFinal = {
+    hatchback: 0,
+    sedan: 0,
+  };
 
- // Sfarsit fisier
- console.log("VANZARILE TOTALE SUNT", vanzariTotale);
- console.log(inventar);
+  for (var i = 0; i < modele.length; i++) {
+    const modelulCurent = modele[i];
+    const obiectMasina = gasireMasina(modelulCurent);
 
- function cumparaPolo() {
-   cumparaMasina("Polo");
- }
+    const masiniVanduteModelCurent = afisareMasiniCumaprate(modelulCurent); // Aka cate s-au cumparat, polo, passsat etc
 
- function afiseazaTotal() {
-   document.getElementById("total").innerText = vanzariTotale;
- }
+    //  rezultatFinal[obiectMasina.caroserie] += masiniVanduteModelCurent;
+    //  SINONIM LINIE MAI SUS:
+    if (obiectMasina.caroserie == "hatchback") {
+      rezultatFinal.hatchback += masiniVanduteModelCurent;
+    } else {
+      rezultatFinal.sedan += masiniVanduteModelCurent;
+    }
+  }
+
+  return rezultatFinal;
+}
+
+console.log("Vandute per categorie", masiniVandutePerCategorie());
+
+// Sfarsit fisier
+console.log("VANZARILE TOTALE SUNT", vanzariTotale);
+console.log(inventar);
+
+function cumparaPolo() {
+  cumparaMasina("Polo");
+}
+
+function afiseazaTotal() {
+  document.getElementById("total").innerText = vanzariTotale;
+}
