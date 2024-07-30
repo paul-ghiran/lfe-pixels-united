@@ -149,4 +149,4 @@ function creazaWarning(event) {
   console.warn(event.target.value);
 }
 
-inputDeTest.removeEventListener("input", creazaWarning)
+inputDeTest.removeEventListener("input", creazaWarning);

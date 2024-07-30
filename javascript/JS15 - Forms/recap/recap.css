@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+#chatbox {
+  border: 1px solid #ccc;
+  margin: auto;
+  padding: 16px;
+  height: 300px;
+  width: 200px;
+  overflow: auto;
+}
+
+.message-box__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.message-box {
+  margin-top: 30px;
+  width: 200px;
+}
+
+.message-box * {
+  display: block;
+  width: 100%;
+  resize: none;
+}
+.message-box input {
+  margin-bottom: 20px;
+}
+
+#chatbox p{
+    margin-top: 5px;
+}
