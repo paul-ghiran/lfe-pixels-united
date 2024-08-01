@@ -64,3 +64,31 @@ console.log(afiseazaSunete(array));
 array.push({ animal: "porc", sunet: "groh", numar: "7" });
 
 console.log(array);
+
+// 6
+function esteAnimalulInNumarPar(obiectAnimal) {
+  if (obiectAnimal.numar % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function gasesteAnimaleCuSot(arrayAnimale) {
+  const rezultat = [];
+  for (var i = 0; i < arrayAnimale.length; i++) {
+    const animalCurent = arrayAnimale[i];
+
+    if (animalCurent.numar % 2 == 0) {
+      rezultat.push(animalCurent);
+    }
+  }
+
+  return rezultat;
+}
+
+const animaleCuSot = array.filter(esteAnimalulInNumarPar);
+const animalePare = gasesteAnimaleCuSot(array);
+
+console.log(animaleCuSot);
+console.log(animalePare);
