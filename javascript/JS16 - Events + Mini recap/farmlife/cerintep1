@@ -1,0 +1,28 @@
+Farm Life
+
+Creati un obiect in care sa tinem minte cate vaci avem la ferma, si cate rate
+10 vaci, 5 rate
+Calculati suma animalelor 
+
+Scrieti o functie care calculeaza cate “picioare” au animalele fermei
+
+Rescrieti obiectul intr-un array de obiecte care sa aiba aceeasi structura ca si:
+
+{ 
+  animal: “caine”,
+  Sunet: “ham”,
+  Numar: “3”
+}
+
+Scrieti o functie care merge prin array-ul de mai sus si scrie sunetul animalului de atatea ori de cate ori este acesta prezent 
+Ex: muu muu … de 10 ori
+    mac mac …de 5 ori
+    ham ham ham
+
+Adaugati un nou obiect in array, pentru porci , de care vom avea 7
+
+Identificati animalele care sunt in numar par
+
+Identificati animalul care are fix 5 reprezentanti in ferma noastra
+
+Scrieti in HTML toate animalele pe rand, sub forma caine: 3

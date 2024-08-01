@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+div#people {
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  border: 3px dotted darkgreen;
+}
+
+.badge {
+  border-radius: 8px;
+  border: 1px solid #333;
+  padding: 20px;
+  width: 300px;
+}
+
+.badge__name {
+  font-weight: lighter;
+  font-size: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.badge__name:hover{
+    color: navy;
+}
+
+.badge__title {
+  color: #777;
+  font-weight: bold;
+}
