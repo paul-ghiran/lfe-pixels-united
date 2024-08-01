@@ -48,3 +48,15 @@ array = [
   { animal: "vaca", sunet: "mu", numar: "10" },
   { animal: "rata", sunet: "mac", numar: "5" },
 ];
+
+function afiseazaSunete(animlas) {
+  animlas.forEach((animal) => {
+    const { sunet, numar } = animal;
+    let sunatRepetat = "";
+    for (let i = 0; i < numar; i++) {
+      sunatRepetat += sunet + " ";
+    }
+    console.log(sunatRepetat);
+  });
+}
+console.log(afiseazaSunete(array));
