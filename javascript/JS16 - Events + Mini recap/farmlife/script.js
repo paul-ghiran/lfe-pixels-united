@@ -34,3 +34,17 @@ function totalPentruFerma(fermaInput) {
   return fermaInput.vaci * 4 + fermaInput.rate * 2;
 }
 console.log(totalPentruFerma(ferma));
+
+/*3. Rescrieti obiectul intr-un array de obiecte care sa aiba aceeasi structura ca si:
+
+{ 
+  animal: “caine”,
+  Sunet: “ham”,
+  Numar: “3”
+}*/
+
+array = [
+  { animal: "caine", sunet: "ham", numar: "3" },
+  { animal: "vaca", sunet: "mu", numar: "10" },
+  { animal: "rata", sunet: "mac", numar: "5" },
+];
