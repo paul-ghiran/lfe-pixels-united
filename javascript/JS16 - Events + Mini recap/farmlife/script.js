@@ -87,7 +87,19 @@ function gasesteAnimaleCuSot(arrayAnimale) {
   return rezultat;
 }
 
-const animaleCuSot = array.filter(esteAnimalulInNumarPar);
+const animaleCuSot = array.filter(function (arrayAnimale) {
+  const rezultat = [];
+  for (var i = 0; i < arrayAnimale.length; i++) {
+    const animalCurent = arrayAnimale[i];
+
+    if (animalCurent.numar % 2 == 0) {
+      rezultat.push(animalCurent);
+    }
+  }
+
+  return rezultat;
+});
+
 const animalePare = gasesteAnimaleCuSot(array);
 
 console.log(animaleCuSot);
