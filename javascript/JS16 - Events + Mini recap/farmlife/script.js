@@ -60,3 +60,7 @@ function afiseazaSunete(animlas) {
   });
 }
 console.log(afiseazaSunete(array));
+
+array.push({ animal: "porc", sunet: "groh", numar: "7" });
+
+console.log(array);
