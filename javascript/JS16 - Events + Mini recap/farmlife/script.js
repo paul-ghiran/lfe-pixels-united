@@ -11,3 +11,18 @@ const ferma = {
 ferma.total = ferma.vaci + ferma.rate;
 
 console.log(ferma);
+
+function calculeazaPicioare(animal){
+    var numarPicioare=0;
+    if(animal==='vaci'){
+        numarPicioare=ferma.vaci*4;
+    }else if(animal ==='rate'){
+        numarPicioare=ferma.rate*2;
+    };
+
+    return numarPicioare;
+}
+
+const picioareVaci=calculeazaPicioare('vaci')
+const picioareRate=calculeazaPicioare('rate')
+console.log(picioareVaci+picioareRate)
