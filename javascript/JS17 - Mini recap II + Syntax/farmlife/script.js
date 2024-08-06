@@ -152,6 +152,11 @@ function adaugareButoane(arr) {
     paragraf.style.display = "inline-block";
 
     document.querySelector("body").appendChild(paragraf);
+    buton.addEventListener("click", function () {
+      const sunete = document.createElement("p");
+      sunete.innerText = `${el.sunet}`;
+      paragraf.appendChild(sunete);
+    });
   });
 }
 
