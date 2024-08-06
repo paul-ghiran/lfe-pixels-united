@@ -28,3 +28,7 @@ Ex: muu muu … de 10 ori
 7. Identificati animalul care are fix 5 reprezentanti in ferma noastra
 
 8. Scrieti in HTML toate animalele pe rand, sub forma caine: 3
+
+9. Stilizati animalele cu un border rotunjit si adaugati-le un buton 
+
+10. Pe butoanele animalelor adaugati un event handler care anunta sunetul animalului
