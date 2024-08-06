@@ -1,5 +1,7 @@
 // ~~~~~~~~~~~~~ FUNCTIE LOG AS A STRING
 
+
+
 function printeazaObiect(object) {
   if (typeof object.length == "number") {
     console.log("INCEPUT ARRAY:");
@@ -125,3 +127,17 @@ console.log(JSON.stringify(animalCuCinciReprezentanti));
 
 printeazaObiect(animalCuCinciReprezentanti);
 printeazaObiect(array);
+
+// 8. Scrieti in HTML toate animalele pe rand, sub forma caine: 3
+
+function afisareAnimale(arr){
+  arr.forEach(function(el){
+    const paragraf=document.createElement('p');
+    paragraf.innerText=`${el.animal} : ${el.numar}`
+
+    const body=document.querySelector('body').appendChild(paragraf)
+  })
+}
+
+
+afisareAnimale(array);
