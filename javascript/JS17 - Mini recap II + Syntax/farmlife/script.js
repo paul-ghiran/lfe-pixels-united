@@ -160,4 +160,75 @@ function adaugareButoane(arr) {
   });
 }
 
-adaugareButoane(array);
+// adaugareButoane(array);
+
+function adaugareAnimaleCuButoane(arr) {
+  arr.forEach(function (el) {
+    const paragraf = document.createElement("p"); // paragraph is now a HTMLElement in browser memory
+    const buton = document.createElement("button"); // buton is now a HTMLElement in browser memory
+    paragraf.innerText = `${el.animal} : ${el.numar}`;
+    buton.innerText = "sunet";
+    paragraf.appendChild(buton);
+
+    paragraf.style.border = "1px solid gray";
+    paragraf.style.borderRadius = "8px";
+    paragraf.style.padding = "12px";
+    paragraf.style.margin = "10px";
+    paragraf.style.display = "inline-block";
+
+    document.querySelector("body").appendChild(paragraf);
+  });
+}
+
+function adaugareHandlereButoane(arrayDeObiecteAnimal) {
+  // DIFERENTA: Functia aceasta nu mai are legatura directa la elementul HTML animal
+  //     ci trebuie sa-l cautam
+  arrayDeObiecteAnimal.forEach(function (obiectAnimal) {
+    const paragrafe = document.querySelectorAll("body > p");
+    let paragrafulPeCareIlCaut = {};
+
+    for (i = 0; i < paragrafe.length; i++) {
+      const paragrafCurent = paragrafe[i];
+      const textulParagrafuluiCurent = paragrafCurent.innerText;
+      const animalulCurent = obiectAnimal.animal;
+
+      if (textulParagrafuluiCurent.includes(animalulCurent)) {
+        paragrafulPeCareIlCaut = paragrafCurent;
+      }
+    }
+
+    const buton = paragrafulPeCareIlCaut.querySelector("button");
+
+    buton.addEventListener("click", function () {
+      const sunete = document.createElement("p");
+      sunete.innerText = `${obiectAnimal.sunet}`;
+      paragrafulPeCareIlCaut.appendChild(sunete);
+    });
+  });
+}
+
+adaugareHandlereButoane([
+  {
+    animal: "pisica",
+    numar: 350,
+    sunet: "mjau",
+  },
+]);
+
+adaugareAnimaleCuButoane(array);
+adaugareHandlereButoane(array);
+
+const logAll = document.querySelector("#log-all");
+
+logAll.addEventListener("click", function () {
+  console.log("THIS ESTE ACUM", this);
+
+  const arrayElementeAnimal = Array.from(document.querySelectorAll("body > p"));
+
+  arrayElementeAnimal.forEach(function (el) {
+    console.log("THIS", this);
+    el.addEventListener("click", () => {
+      this.innerHTML = " S-a dat un click.";
+    });
+  });
+});
