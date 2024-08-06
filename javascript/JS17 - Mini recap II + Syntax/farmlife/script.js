@@ -140,4 +140,15 @@ function afisareAnimale(arr){
 }
 
 
-afisareAnimale(array);
+function adaugareButoane(arr){
+  arr.forEach(function(el){
+    const paragraf=document.createElement('p');
+    const buton = document.createElement('button');
+    paragraf.innerText=`${el.animal} : ${el.numar}`;
+    buton.innerText = "sunet";
+    paragraf.appendChild(buton);
+
+    const body=document.querySelector('body').appendChild(paragraf)
+  })
+}
+adaugareButoane(array);
