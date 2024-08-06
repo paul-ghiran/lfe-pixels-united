@@ -1,3 +1,15 @@
+// ~~~~~~~~~~~~~ FUNCTIE LOG AS A STRING
+
+function printeazaObiect(object) {
+  if (typeof object.length == "number") {
+    console.log("INCEPUT ARRAY:");
+    object.forEach(console.log)
+    console.log("SFARSIT ARRAY")
+  } else {
+    console.log("Object:", JSON.stringify(object));
+  }
+}
+
 //1. Creati un obiect in care sa tinem minte cate vaci avem la ferma, si cate rate
 // 10 vaci, 5 rate
 
@@ -105,8 +117,11 @@ const animalePare = gasesteAnimaleCuSot(array);
 console.log(animaleCuSot);
 console.log(animalePare);
 // Identificati animalul care are fix 5 reprezentanti in ferma noastra
-function animal5Reprezentanti(array){
-  return array.find(animal => animal.numar ==5);
+function animal5Reprezentanti(array) {
+  return array.find((animal) => animal.numar == 5);
 }
-const animalCuCinciReprezentanti= animal5Reprezentanti(array);
-console.log(JSON.stringify(animalCuCinciReprezentanti) )
+const animalCuCinciReprezentanti = animal5Reprezentanti(array);
+console.log(JSON.stringify(animalCuCinciReprezentanti));
+
+printeazaObiect(animalCuCinciReprezentanti);
+printeazaObiect(array);
