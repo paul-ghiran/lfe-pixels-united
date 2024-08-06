@@ -104,3 +104,9 @@ const animalePare = gasesteAnimaleCuSot(array);
 
 console.log(animaleCuSot);
 console.log(animalePare);
+// Identificati animalul care are fix 5 reprezentanti in ferma noastra
+function animal5Reprezentanti(array){
+  return array.find(animal => animal.numar ==5);
+}
+const animalCuCinciReprezentanti= animal5Reprezentanti(array);
+console.log(JSON.stringify(animalCuCinciReprezentanti) )
