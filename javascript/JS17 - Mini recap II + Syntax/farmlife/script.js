@@ -1,12 +1,10 @@
 // ~~~~~~~~~~~~~ FUNCTIE LOG AS A STRING
 
-
-
 function printeazaObiect(object) {
   if (typeof object.length == "number") {
     console.log("INCEPUT ARRAY:");
-    object.forEach(console.log)
-    console.log("SFARSIT ARRAY")
+    object.forEach(console.log);
+    console.log("SFARSIT ARRAY");
   } else {
     console.log("Object:", JSON.stringify(object));
   }
@@ -130,25 +128,31 @@ printeazaObiect(array);
 
 // 8. Scrieti in HTML toate animalele pe rand, sub forma caine: 3
 
-function afisareAnimale(arr){
-  arr.forEach(function(el){
-    const paragraf=document.createElement('p');
-    paragraf.innerText=`${el.animal} : ${el.numar}`
+function afisareAnimale(arr) {
+  arr.forEach(function (el) {
+    const paragraf = document.createElement("p");
+    paragraf.innerText = `${el.animal} : ${el.numar}`;
 
-    const body=document.querySelector('body').appendChild(paragraf)
-  })
+    document.querySelector("body").appendChild(paragraf);
+  });
 }
 
-
-function adaugareButoane(arr){
-  arr.forEach(function(el){
-    const paragraf=document.createElement('p');
-    const buton = document.createElement('button');
-    paragraf.innerText=`${el.animal} : ${el.numar}`;
+function adaugareButoane(arr) {
+  arr.forEach(function (el) {
+    const paragraf = document.createElement("p"); // paragraph is now a HTMLElement in browser memory
+    const buton = document.createElement("button"); // buton is now a HTMLElement in browser memory
+    paragraf.innerText = `${el.animal} : ${el.numar}`;
     buton.innerText = "sunet";
     paragraf.appendChild(buton);
 
-    const body=document.querySelector('body').appendChild(paragraf)
-  })
+    paragraf.style.border = "1px solid gray";
+    paragraf.style.borderRadius = "8px";
+    paragraf.style.padding = "12px";
+    paragraf.style.margin = "10px";
+    paragraf.style.display = "inline-block";
+
+    document.querySelector("body").appendChild(paragraf);
+  });
 }
+
 adaugareButoane(array);
