@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send POST Request</title>
+</head>
+
+<body>
+    <h1>Send a Message</h1>
+    <form id="messageForm">
+        <label for="content">Message:</label>
+        <input type="text" id="content" name="content" required>
+        <button type="submit">Send</button>
+    </form>
+
+    <p id="response"></p>
+
+    <script>
+        // Handle form submission
+        document.getElementById('messageForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+
+            // Get the message content from the form
+            const message = document.getElementById('content').value;
+
+            // Send a POST request using fetch
+            fetch('https://paulghiran.com/messages/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    message: message,
+                    author: "N/A"
+                }
+                ),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // Display the response message
+                    document.getElementById('response').textContent = data.message;
+                    if (data.status === 'success') {
+                        // Clear the input field if the message was sent successfully
+                        document.getElementById('content').value = '';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('response').textContent = 'An error occurred while sending the message.';
+                });
+        });
+    </script>
+</body>
+
+</html>
