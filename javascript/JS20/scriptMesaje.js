@@ -5,11 +5,16 @@ const _sendMessage = document.querySelector("#sendMessage");
 const _authorInput = document.querySelector("#authorName");
 const _textarea = document.querySelector("#newMessage");
 const _listaMesaje = document.querySelector("#lista-mesaje");
-
+let authorName = "";
 // Deschide modalul la click pe butonul de submit
 _submitMessage.addEventListener("click", () => {
   if (_textarea.value.trim()) {
-    _modal.style.display = "block";
+    if (authorName) {
+      const message = _textarea.value.trim();
+      fetchPostMessageWithAuthor(authorName, message);
+    } else {
+      _modal.style.display = "block";
+    }
   } else {
     alert("Vă rugăm să introduceți un mesaj înainte de a trimite.");
   }
@@ -24,9 +29,10 @@ _close.addEventListener("click", () => {
 _sendMessage.addEventListener("click", () => {
   const author = _authorInput.value;
   const message = _textarea.value;
+  authorName = author;
 
   if (author.trim()) {
-    fetchPostMessageWithAuthor(author, message);
+    fetchPostMessageWithAuthor(authorName, message);
     _authorInput.value = "";
     _textarea.value = "";
     _modal.style.display = "none";
