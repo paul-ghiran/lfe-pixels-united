@@ -48,7 +48,7 @@ const fetchMessagesFromServer = async () => {
 //     fetchMessagesFromServer();
 // }, 1000)
 
-setInterval(fetchMessagesFromServer, 1000)
+setInterval(fetchMessagesFromServer, 5000)
 
 async function fetchPostMessage(mesaj, userKey) {
     let raspunsJSON;

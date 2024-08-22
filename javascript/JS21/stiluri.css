@@ -52,9 +52,8 @@ h1 {
 }
 
 #lista-mesaje h5 {
-    margin-bottom: -1em;
+    margin-bottom: 1em;
 }
-
 
 #lista-mesaje h5 span {
     font-weight: normal;
