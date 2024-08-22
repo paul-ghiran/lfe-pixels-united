@@ -27,6 +27,11 @@ function printMessage(messageObject) {
 
     _messageTextElement.innerText = messageObject.message;
 
+    if (messageObject.authenticated != "0") {
+        _authorElement.style.color = 'darkblue';
+        _authorElement.style.fontSize = '1.1em';
+    }
+
     _listaMesaje.appendChild(_messageElement);
 }
 

@@ -37,13 +37,18 @@ h1 {
 }
 
 #post,
-#submit-login {
+#submit-login,
+#post-authenticated {
     border: 1px solid #21017b;
     color: #21017b;
     font-size: 20px;
     padding: 10px 30px;
     background: white;
     font-weight: bold;
+}
+
+#post {
+    color: darkgreen;
 }
 
 #lista-mesaje h5 {
