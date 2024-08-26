@@ -114,3 +114,10 @@ label+input {
     background: white;
     padding: 30px;
 }
+
+/*Maria*/
+#lista-mesaje img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}

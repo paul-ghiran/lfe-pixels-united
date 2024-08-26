@@ -40,13 +40,17 @@ function fetchMessagesFromServer() {
 setInterval(fetchMessagesFromServer, 1000)
 
 function fetchPostMessage(mesaj) {
+   //Am adaugat linia de cod pentru a obtine numele autorului din localStorage
+    const selectedAuthor = localStorage.getItem('selectedAuthor') || 'necunoscut';
+
     const promise = fetch('https://paulghiran.com/messages/', {
         headers: {
             'Content-Type': 'application/json',
         },
         method: "POST",
         body: JSON.stringify({
-            author: 'necunoscut',
+            //Am schimbat 'necunocut' cu const adaugat mai sus pentru a imi afisa numele de autor daca exista sau necunoscut daca nu exsita 
+            author: selectedAuthor,
             message: mesaj
         })
     });
@@ -61,3 +65,23 @@ _submit.addEventListener('click', () => {
 
     _textarea.value = '';
 })
+
+
+//Maria 
+//Am creat un eventlisener. Atunci cand butonul de submit este apasat modalul meu sa treaca din display:none in display :block si asa se afiseaza
+_submit.addEventListener('click', () => {
+    document.getElementById('authorModal').style.display = 'block';
+});
+
+//
+document.getElementById('saveAuthorButton').addEventListener('click', function () {
+    const authorName = document.getElementById('authorInput').value;
+    localStorage.setItem('selectedAuthor', authorName);
+
+    document.getElementById('authorModal').style.display = 'none';
+
+    const textMesaj = _textarea.value;
+    fetchPostMessage(textMesaj);
+
+    _textarea.value = '';
+});
