@@ -38,10 +38,6 @@ printeazaProduse(listaProduse);
 
 const cartProduse = [];
 
-function addToCart(produs) {
-  cartProduse.push(produs);
-  printeazaCart(cartProduse);
-}
 
 addToCart(listaProduse[0]);
 addToCart(listaProduse[0]);
@@ -51,7 +47,10 @@ addToCart(listaProduse[1]);
 
 console.log(cartProduse);
 
-const calculateTotal = (obj) => obj.reduce((sum, curentElement) => sum + curentElement.price, 0);
+function calculateTotal(obj) {
+  return obj.reduce((sum, curentElement) => sum + curentElement.price, 0);
+}
+
 console.log(calculateTotal(listaProduse));
 
 // const calculateTotal2 = (arr) => {
@@ -62,18 +61,23 @@ console.log(calculateTotal(listaProduse));
 // console.log(calculateTotal2(listaProduse));
 
 
-const printeazaElementCart = function (product) {
+function printeazaElementCart(product) {
   const cartHTML = document.querySelector("#cart");
   const elementCart = document.createElement("div");
   cartHTML.appendChild(elementCart);
   elementCart.innerHTML = `<h4>${product.name} (${product.price})</h4> <hr />`;
 };
 
-const printeazaCart = function (cartIntreg) {
+function printeazaCart(cartIntreg) {
   const cartHTML = document.querySelector("#cart");
   cartHTML.innerHTML = "";
   cartIntreg.forEach(printeazaElementCart);
   cartHTML.innerHTML += "Pret total:" + calculateTotal(cartIntreg)
+}
+
+function addToCart(produs) {
+  cartProduse.push(produs);
+  printeazaCart(cartProduse);
 }
 
 printeazaCart(cartProduse);
