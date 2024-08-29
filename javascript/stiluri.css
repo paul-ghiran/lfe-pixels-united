@@ -1,0 +1,20 @@
+.jumatati {
+    display: flex;
+}
+
+.jumatati>.jumatate {
+    width: 50%;
+}
+
+.lista-produse>div {
+    margin: 0 20px;
+    width: 170px;
+    display: inline-block;
+    border: 1px solid #ededed;
+    text-align: center;
+    padding: 15px;
+}
+
+.lista-produse>div>li {
+    list-style: none;
+}

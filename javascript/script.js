@@ -23,7 +23,13 @@ const printeazaProdus = function (product) {
   const listaProduseHtml = document.querySelector(".lista-produse");
   const elementProdus = document.createElement("div");
   listaProduseHtml.appendChild(elementProdus);
-  elementProdus.innerHTML = `<li><img src="${product.image}" /><h2>${product.name}</h2><button></button></li>`;
+
+  elementProdus.innerHTML = `<li><img src="${product.image}" /><h2>${product.name}</h2></li>`;
+
+  const butonAdaugareProdus = document.createElement('button');
+  butonAdaugareProdus.innerText = "Adauga In Cos";
+  elementProdus.appendChild(butonAdaugareProdus);
+
 };
 
 const printeazaProduse = (arrayDeProduse) => arrayDeProduse.forEach((produs) => printeazaProdus(produs));
@@ -31,19 +37,42 @@ const printeazaProduse = (arrayDeProduse) => arrayDeProduse.forEach((produs) => 
 printeazaProduse(listaProduse);
 
 const cartProduse = [];
+
 function addToCart(produs) {
   cartProduse.push(produs);
 }
+
 addToCart(listaProduse[0]);
-console.log(addToCart(listaProduse));
+addToCart(listaProduse[0]);
+addToCart(listaProduse[0]);
+addToCart(listaProduse[1]);
+addToCart(listaProduse[1]);
+
 console.log(cartProduse);
 
 const calculateTotal = (obj) => obj.reduce((sum, curentElement) => sum + curentElement.price, 0);
 console.log(calculateTotal(listaProduse));
 
-const calculateTotal2 = (arr) => {
-  let sum = 0;
-  arr.forEach((obj) => (sum += obj.price));
-  return sum;
+// const calculateTotal2 = (arr) => {
+//   let sum = 0;
+//   arr.forEach((obj) => (sum += obj.price));
+//   return sum;
+// };
+// console.log(calculateTotal2(listaProduse));
+
+
+const printeazaElementCart = function (product) {
+  const cartHTML = document.querySelector("#cart");
+  const elementCart = document.createElement("div");
+  cartHTML.appendChild(elementCart);
+  elementCart.innerHTML = `<h4>${product.name} (${product.price})</h4> <hr />`;
 };
-console.log(calculateTotal2(listaProduse));
+
+const printeazaCart = function (cartIntreg) {
+  const cartHTML = document.querySelector("#cart");
+  cartHTML.innerHTML = "";
+  cartIntreg.forEach(printeazaElementCart);
+  cartHTML.innerHTML += "Pret total:" + calculateTotal(cartIntreg)
+}
+
+printeazaCart(cartProduse);
