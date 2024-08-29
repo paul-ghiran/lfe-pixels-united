@@ -82,15 +82,17 @@ printeazaCart(cartProduse);
 const fetchData = async function () {
   const raspunsRequest = await fetch("https://paulghiran.com/messages/product.php");
   const arrayProduse = await raspunsRequest.json();
-  console.log(arrayProduse);
+
   printeazaProduse(arrayProduse);
 };
+
 fetchData();
 
 async function trimiteComanda() {
   const continutBody = JSON.stringify({
     order: cartProduse.map((produs) => produs.id),
   });
+
   const promise = fetch("https://paulghiran.com/messages/order.php", {
     headers: {
       "Content-Type": "application/json",
