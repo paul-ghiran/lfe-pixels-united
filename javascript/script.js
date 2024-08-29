@@ -40,6 +40,7 @@ const cartProduse = [];
 
 function addToCart(produs) {
   cartProduse.push(produs);
+  printeazaCart(cartProduse);
 }
 
 addToCart(listaProduse[0]);
