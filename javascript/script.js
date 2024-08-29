@@ -29,3 +29,21 @@ const printeazaProdus = function (product) {
 const printeazaProduse = (arrayDeProduse) => arrayDeProduse.forEach((produs) => printeazaProdus(produs));
 
 printeazaProduse(listaProduse);
+
+const cartProduse = [];
+function addToCart(produs) {
+  cartProduse.push(produs);
+}
+addToCart(listaProduse[0]);
+console.log(addToCart(listaProduse));
+console.log(cartProduse);
+
+const calculateTotal = (obj) => obj.reduce((sum, curentElement) => sum + curentElement.price, 0);
+console.log(calculateTotal(listaProduse));
+
+const calculateTotal2 = (arr) => {
+  let sum = 0;
+  arr.forEach((obj) => (sum += obj.price));
+  return sum;
+};
+console.log(calculateTotal2(listaProduse));
