@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magazin online</title>
+  <link rel="stylesheet" href="./stiluri.css">
+  <link rel="stylesheet" href="./scss/style.min.css">
+</head>
+
+<body>
+  <main>
+    <div class="jumatati">
+      <div class="jumatate">
+        <h2>Produse</h2>
+        <div class="controale-produse">
+          Produse per pagina: <select id="productPerPage">
+            <option value="5">5</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+          </select>
+          Ordine Produse: <select id="order">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+          </select>
+        </div>
+        <ul class="lista-produse"></ul>
+      </div>
+      <div class="jumatate">
+        <h2>Cart-ul Meu</h2>
+        <div id="cart"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

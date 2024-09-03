@@ -1,0 +1,36 @@
+.jumatati {
+  display: flex;
+}
+
+.jumatati > .jumatate {
+  width: 50%;
+}
+
+.lista-produse > div {
+  margin: 20px;
+  width: 170px;
+  display: inline-block;
+  border: 1px solid #ededed;
+  text-align: center;
+  padding: 15px;
+}
+
+.lista-produse > div > li {
+  list-style: none;
+  height: 170px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 170px;
+}
+
+.clasa-button {
+  margin-left: 30px;
+  padding: 10px 30px;
+}
+
+.lista-produse h2{
+  line-height: 18px;
+  font-size: 16px;
+}
